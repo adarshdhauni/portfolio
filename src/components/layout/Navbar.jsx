@@ -69,10 +69,8 @@ const Navbar = () => {
           <div className="flex lg:hidden items-center gap-2">
             <ThemeToggle />
             <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="size-5" />
-                </Button>
+              <SheetTrigger render={<Button variant="ghost" size="icon" />}>
+                <Menu className="size-5" />
               </SheetTrigger>
 
               <SheetContent side="right">

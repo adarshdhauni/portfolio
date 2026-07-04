@@ -1,7 +1,17 @@
-import React, { memo } from "react";
+import React from "react";
+import PageWrapper from "./PageWrapper";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 
-const MainLayout = ({ children }) => {
-  return <main className="min-h-screen overflow-x-hidden">{children}</main>;
+const MainLayout = () => {
+  return (
+    <PageWrapper>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </PageWrapper>
+  );
 };
 
-export default memo(MainLayout);
+export default MainLayout;

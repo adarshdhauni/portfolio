@@ -1,8 +1,26 @@
-import { lazy, Suspense, useState } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
 import "./App.css";
+import MainLayout from "./components/layout/MainLayout";
 
 function App() {
-  return <></>;
+  const router = createBrowserRouter([
+    {
+      element: <MainLayout />,
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+      ],
+    },
+  ]);
+
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

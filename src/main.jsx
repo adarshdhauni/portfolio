@@ -6,6 +6,7 @@ import "@fontsource/geist-sans";
 import "@fontsource/geist-mono";
 import { Toaster } from "sonner";
 import ThemeProvider from "@/components/common/ThemeProvider";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
