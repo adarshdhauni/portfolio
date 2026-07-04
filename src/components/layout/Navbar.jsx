@@ -2,13 +2,16 @@ import React from "react";
 import Container from "./Container";
 import { SITE_CONFIG } from "@/constants/siteConfig";
 import { NAV_LINKS } from "@/constants/navigation";
-import { Button } from "@base-ui/react";
+import { Menu, Moon, Sun } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-100">
       <Container>
         <nav
+          aria-label="Primary navigation"
           className="
             mt-4
             flex
@@ -26,7 +29,7 @@ const Navbar = () => {
             href="#"
             className="
     text-xl
-    font-bold
+    font-semibold
     tracking-tight
     transition-colors
     hover:text-primary
@@ -57,11 +60,40 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="flex items-center gap-2">
-            <Button size="sm">Resume</Button>
+          <div className="hidden lg:flex items-center gap-2">
             <Button variant="ghost" size="icon">
-              🌙
+              <Moon className="size-5" />
             </Button>
+            <Button size="sm">Resume</Button>
+          </div>
+
+          <div className="flex lg:hidden items-center gap-2">
+            <Button variant="ghost" size="icon">
+              <Moon className="size-5" />
+            </Button>
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="size-5" />
+                </Button>
+              </SheetTrigger>
+
+              <SheetContent side="right">
+                <div className="mt-10 flex flex-col gap-6">
+                  {NAV_LINKS.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      className="text-lg font-medium"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+
+                  <Button className="mt-4 w-full">Resume</Button>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </nav>
       </Container>
