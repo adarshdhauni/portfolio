@@ -2,9 +2,10 @@ import React from "react";
 import Container from "./Container";
 import { SITE_CONFIG } from "@/constants/siteConfig";
 import { NAV_LINKS } from "@/constants/navigation";
-import { Menu, Moon, Sun } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
+import ThemeToggle from "../common/ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -61,16 +62,12 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden lg:flex items-center gap-2">
-            <Button variant="ghost" size="icon">
-              <Moon className="size-5" />
-            </Button>
+            <ThemeToggle />
             <Button size="sm">Resume</Button>
           </div>
 
           <div className="flex lg:hidden items-center gap-2">
-            <Button variant="ghost" size="icon">
-              <Moon className="size-5" />
-            </Button>
+            <ThemeToggle />
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
