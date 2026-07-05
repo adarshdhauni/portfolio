@@ -15,12 +15,12 @@ const Projects = () => {
           <SectionHeading
             eyebrow="Projects"
             title="Featured Project"
-            description="A selection of projects that showcase my approach to building modern, scalable, and user-focused web applications."
+            description="A selection of projects that showcase my approach to building modern, scalable, high-performance, and user-focused web applications."
           />
         </div>
 
         {featuredProject && (
-          <div data-aos="fade-up" data-aos-delay="150">
+          <div className="mt-14" data-aos="fade-up" data-aos-delay="150">
             <FeaturedProjectCard project={featuredProject} />
           </div>
         )}

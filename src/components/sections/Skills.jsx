@@ -13,11 +13,11 @@ const Skills = () => {
           <SectionHeading
             eyebrow="Skills"
             title="Technologies & Tools"
-            description="Technologies I use to design, build and deploy modern web applications."
+            description="A collection of technologies, frameworks, and tools I use to build fast, scalable, and maintainable web applications."
           />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
           {SKILLS.map((category, index) => (
             <div
               key={category.category}

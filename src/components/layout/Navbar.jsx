@@ -1,18 +1,22 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Menu } from "lucide-react";
+
 import Container from "./Container";
+import ThemeToggle from "../common/ThemeToggle";
+import { Button, buttonVariants } from "../ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { ChevronRight, Menu } from "lucide-react";
+
 import { SITE_CONFIG } from "@/constants/siteConfig";
 import { NAV_LINKS } from "@/constants/navigation";
-import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { Button, buttonVariants } from "../ui/button";
-import ThemeToggle from "../common/ThemeToggle";
 import useActiveSection from "@/hooks/useActiveSection";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const activeSection = useActiveSection();
-
   const [open, setOpen] = useState(false);
+
+  const closeSheet = () => setOpen(false);
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 pt-4">
@@ -21,51 +25,52 @@ const Navbar = () => {
           aria-label="Primary navigation"
           className="
             flex
-            h-14
-            md:h-16
+            h-15
+            md:h-17
             items-center
             justify-between
             rounded-2xl
             border
-            border-border/50
-            bg-background/90
+            border-border/30
+            bg-background/80
             px-6
-            shadow-sm
+            shadow-[0_8px_30px_rgb(0_0_0/0.04)]
             backdrop-blur-xl
           "
         >
           <a
             href="#hero"
             className="
-    text-xl
-    font-semibold
-    tracking-tight
-    transition-colors
-    hover:text-primary
-  "
+              text-xl
+              font-bold
+              tracking-[-0.03em]
+              transition-colors
+              duration-200
+              hover:text-primary
+            "
           >
             {SITE_CONFIG.name}
             <span className="text-primary">.</span>
           </a>
 
-          <ul className="hidden items-center gap-8 lg:flex">
+          <ul className="hidden items-center gap-9 lg:flex">
             {NAV_LINKS.map((link) => {
               const isActive = activeSection === link.id;
 
               return (
                 <li key={link.id}>
                   <a
-                    aria-current={isActive ? "page" : undefined}
                     href={link.href}
+                    aria-current={isActive ? "page" : undefined}
                     className={cn(
-                      "relative text-sm font-medium transition-colors duration-300 hover:text-foreground",
-                      isActive ? "text-primary" : "text-muted-foreground",
+                      "relative text-sm font-medium text-muted-foreground transition-colors duration-200 hover:text-foreground",
+                      isActive && "text-primary",
                     )}
                   >
                     <span
                       aria-hidden="true"
                       className={cn(
-                        "absolute -bottom-1 left-0 h-0.5 w-full origin-left scale-x-0 bg-primary transition-transform duration-300",
+                        "absolute -bottom-1.5 left-0 h-px w-full origin-left scale-x-0 bg-primary transition-transform duration-200",
                         isActive && "scale-x-100",
                       )}
                     />
@@ -80,10 +85,10 @@ const Navbar = () => {
             <ThemeToggle />
 
             <a
-              aria-label="Download resume"
               href={SITE_CONFIG.resume}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Download resume"
               className={buttonVariants()}
             >
               Resume
@@ -92,71 +97,110 @@ const Navbar = () => {
 
           <div className="flex items-center gap-2 lg:hidden">
             <ThemeToggle />
+
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger
                 render={
                   <Button
-                    aria-label="Open navigation menu"
                     variant="ghost"
                     size="icon"
+                    aria-label="Open navigation menu"
                   />
                 }
               >
                 <Menu className="size-5" />
               </SheetTrigger>
 
-              <SheetContent side="right" className="w-[320px] p-6 sm:w-95">
+              <SheetContent side="right" className="w-[360px] p-6 sm:max-w-sm">
                 <div className="flex h-full flex-col">
-                  <div className="border-b pb-6">
+                  <div className="border-b border-border/50 pb-6">
                     <a
                       href="#hero"
-                      onClick={() => setOpen(false)}
-                      className="text-2xl font-bold tracking-tight"
+                      onClick={closeSheet}
+                      className="text-2xl font-bold tracking-[-0.03em]"
                     >
                       {SITE_CONFIG.name}
                       <span className="text-primary">.</span>
                     </a>
 
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <p className="mt-2 text-sm leading-6 text-muted-foreground">
                       {SITE_CONFIG.role}
                     </p>
                   </div>
-                  <nav className="mt-8 flex flex-col gap-1">
-                    {NAV_LINKS.map((link) => {
-                      const isActive = activeSection === link.id;
 
-                      return (
-                        <a
-                          key={link.id}
-                          aria-current={isActive ? "page" : undefined}
-                          href={link.href}
-                          onClick={() => setOpen(false)}
-                          className={cn(
-                            "rounded-xl px-4 py-3 text-lg font-medium transition-all duration-300",
-                            isActive
-                              ? "bg-primary/10 text-primary"
-                              : "hover:bg-muted",
-                          )}
-                        >
-                          {link.label}
-                        </a>
-                      );
-                    })}
-                  </nav>
+                  <div className="mt-8">
+                    <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                      Navigation
+                    </p>
 
-                  <div className="mt-auto border-t pt-6">
+                    <nav className="space-y-2">
+                      {NAV_LINKS.map((link) => {
+                        const isActive = activeSection === link.id;
+
+                        return (
+                          <a
+                            key={link.id}
+                            href={link.href}
+                            aria-current={isActive ? "page" : undefined}
+                            onClick={closeSheet}
+                            className={cn(
+                              `
+                    group
+                    flex
+                    items-center
+                    justify-between
+                    rounded-2xl
+                    border
+                    border-transparent
+                    px-4
+                    py-3.5
+                    transition-all
+                    duration-200
+                    `,
+                              isActive
+                                ? "border-primary/20 bg-primary/10 text-primary"
+                                : "hover:border-border hover:bg-muted/60",
+                            )}
+                          >
+                            <span className="text-base font-medium">
+                              {link.label}
+                            </span>
+
+                            <ChevronRight
+                              className={cn(
+                                "size-4 transition-transform duration-200 group-hover:translate-x-1",
+                                isActive
+                                  ? "text-primary"
+                                  : "text-muted-foreground",
+                              )}
+                            />
+                          </a>
+                        );
+                      })}
+                    </nav>
+                  </div>
+
+                  <div className="mt-auto border-t border-border/50 pt-6">
                     <a
-                      aria-label="Download resume"
                       href={SITE_CONFIG.resume}
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => setOpen(false)}
+                      aria-label="Download resume"
+                      onClick={closeSheet}
                       className={buttonVariants({
-                        className: "mt-4 w-full",
+                        className: "w-full",
                       })}
                     >
                       Resume
                     </a>
+
+                    <p className="mt-3 text-center text-xs leading-5 text-muted-foreground">
+                      PDF • Opens in a new tab
+                    </p>
+
+                    <p className="mt-6 text-center text-sm text-muted-foreground">
+                      Open to remote opportunities.
+                    </p>
                   </div>
                 </div>
               </SheetContent>

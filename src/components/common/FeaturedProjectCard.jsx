@@ -1,6 +1,6 @@
 import { CircleCheck, ExternalLink } from "lucide-react";
 import { SiGithub } from "react-icons/si";
-import React, { memo } from "react";
+
 import { buttonVariants } from "@/components/ui/button";
 
 const FeaturedProjectCard = ({ project }) => {
@@ -10,28 +10,28 @@ const FeaturedProjectCard = ({ project }) => {
   return (
     <article
       className="
-      group 
-    overflow-hidden
-    rounded-3xl
-    border
-    bg-card
-    shadow-sm
-    transition-all duration-300
-hover:shadow-lg
-hover:-translate-y-1
-  "
+        group
+        overflow-hidden
+        rounded-3xl
+        border
+        border-border/50
+        bg-card
+        shadow-sm
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:border-primary/20
+        hover:shadow-xl
+      "
     >
       <div className="grid lg:grid-cols-2">
-        <div
-          className="relative min-h-80 lg:min-h-full bg-muted group
-overflow-hidden"
-        >
+        <div className="relative overflow-hidden bg-muted lg:min-h-full">
           <a
-            aria-label={`View ${title} live demo`}
             href={live}
             target="_blank"
             rel="noopener noreferrer"
-            className="overflow-hidden block h-full"
+            aria-label={`View ${title} live demo`}
+            className="block h-full overflow-hidden"
           >
             <img
               src={image}
@@ -40,88 +40,100 @@ overflow-hidden"
               height={771}
               loading="eager"
               decoding="async"
-              className="h-full w-full object-cover transition-transform duration-500
-            group-hover:scale-105"
+              className="
+                h-full
+                w-full
+                object-cover
+                transition-transform
+                duration-500
+                group-hover:scale-[1.03]
+              "
             />
           </a>
         </div>
+
         <div className="flex flex-col justify-center p-8 lg:p-10">
           <h3 className="text-3xl font-bold tracking-tight">{title}</h3>
-          <p className="mt-4 text-base leading-7 text-muted-foreground">
+
+          <p className="mt-5 text-[17px] leading-8 text-muted-foreground">
             {description}
           </p>
-          <div className="mt-8">
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+
+          <div className="mt-10">
+            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Highlights
             </h4>
 
-            <div className="grid gap-3 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2">
               {highlights.map((highlight) => (
-                <div key={highlight} className="flex items-center gap-3">
-                  <CircleCheck className="size-5 shrink-0 text-primary" />
+                <div key={highlight} className="flex items-start gap-3">
+                  <CircleCheck className="mt-0.5 size-5 shrink-0 text-primary" />
 
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-sm leading-6 text-muted-foreground">
                     {highlight}
                   </span>
                 </div>
               ))}
             </div>
+          </div>
 
-            <div className="mt-8">
-              <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-                Technologies
-              </h4>
+          <div className="mt-10">
+            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+              Technologies
+            </h4>
 
-              <div className="flex flex-wrap gap-2">
-                {technologies.map((technology) => (
-                  <span
-                    key={technology}
-                    className="
-          rounded-full
-          border
-          bg-muted/50
-          px-3
-          py-1
-          text-sm
-          font-medium
-          text-muted-foreground
-          transition-all
-hover:bg-primary
-hover:text-primary-foreground
-        "
-                  >
-                    {technology}
-                  </span>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2.5">
+              {technologies.map((technology) => (
+                <span
+                  key={technology}
+                  className="
+                    rounded-full
+                    border
+                    border-border/60
+                    bg-background
+                    px-3.5
+                    py-1.5
+                    text-sm
+                    font-medium
+                    text-muted-foreground
+                    transition-colors
+                    duration-200
+                    hover:border-primary/20
+                    hover:bg-primary
+                    hover:text-primary-foreground
+                  "
+                >
+                  {technology}
+                </span>
+              ))}
             </div>
+          </div>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                aria-label={`View ${title} live demo`}
-                href={live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={buttonVariants({ size: "lg" })}
-              >
-                <ExternalLink className="size-4" />
-                Live Demo
-              </a>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a
+              href={live}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${title} live demo`}
+              className={buttonVariants({ size: "lg" })}
+            >
+              <ExternalLink className="size-4" />
+              Live Demo
+            </a>
 
-              <a
-                aria-label={`View ${title} source code on GitHub`}
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={buttonVariants({
-                  variant: "outline",
-                  size: "lg",
-                })}
-              >
-                <SiGithub className="size-4" />
-                Source Code
-              </a>
-            </div>
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${title} source code on GitHub`}
+              className={buttonVariants({
+                variant: "outline",
+                size: "lg",
+              })}
+            >
+              <SiGithub className="size-4" />
+              Source Code
+            </a>
           </div>
         </div>
       </div>
@@ -129,4 +141,4 @@ hover:text-primary-foreground
   );
 };
 
-export default memo(FeaturedProjectCard);
+export default FeaturedProjectCard;

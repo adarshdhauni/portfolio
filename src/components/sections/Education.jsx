@@ -15,13 +15,17 @@ const Education = () => {
           <SectionHeading
             eyebrow="Education"
             title="Education & Learning"
-            description="My academic background, development journey, and continuous commitment to learning."
+            description="My academic background, hands-on development journey, and commitment to continuously improving as a software engineer."
           />
         </div>
 
-        <div className="space-y-6">
+        <div className="mt-14 space-y-6">
           {LEARNING.map((item, index) => (
-            <div key={item.title} data-aos="fade-up" data-aos-delay={index * 120}>
+            <div
+              key={item.title}
+              data-aos="fade-up"
+              data-aos-delay={index * STAGGER_DELAY}
+            >
               <JourneyCard item={item} />
             </div>
           ))}

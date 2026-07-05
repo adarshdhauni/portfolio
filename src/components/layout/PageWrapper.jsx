@@ -1,61 +1,62 @@
-import React, { memo } from "react";
+import React from "react";
 
 const PageWrapper = ({ children }) => {
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-background">
+    <div className="relative min-h-screen overflow-x-hidden bg-background">
       <div
         className="
-      pointer-events-none
-      fixed
-      inset-0
-      -z-10
-      overflow-hidden
-    "
+          pointer-events-none
+          fixed
+          inset-0
+          -z-10
+          overflow-hidden
+        "
+        aria-hidden="true"
       >
         <div
           className="
-        absolute
-        left-1/2
-        top-0
-        h-150
-        w-150
-        -translate-x-1/2
-        rounded-full
-        bg-primary/8
-        blur-3xl
-      "
+            absolute
+            left-1/2
+            top-0
+            h-180
+            w-180
+            -translate-x-1/2
+            rounded-full
+            bg-primary/8
+            blur-[120px]
+          "
         />
 
         <div
           className="
-        absolute
-        right-0
-        top-[45%]
-        h-125
-        w-125
-        rounded-full
-        bg-primary/4
-        blur-3xl
-      "
+            absolute
+            -right-24
+            top-[42%]
+            h-140
+            w-140
+            rounded-full
+            bg-primary/4
+            blur-[110px]
+          "
         />
 
         <div
           className="
-        absolute
-        bottom-0
-        left-0
-        h-125
-        w-125
-        rounded-full
-        bg-primary/4
-        blur-3xl
-      "
+            absolute
+            -left-20
+            -bottom-24
+            h-120
+            w-120
+            rounded-full
+            bg-primary/3
+            blur-[100px]
+          "
         />
       </div>
 
       {children}
-    </main>
+    </div>
   );
 };
 
-export default memo(PageWrapper);
+export default PageWrapper;

@@ -18,21 +18,37 @@ const About = () => {
           <div
             data-aos="fade-up"
             data-aos-delay="150"
-            className="space-y-6 text-base leading-8 text-muted-foreground"
+            className="space-y-7 text-[17px] leading-8 text-muted-foreground"
           >
             <p>
-              I enjoy building modern web applications with clean architecture,
-              responsive interfaces, and a strong focus on performance. I like
-              transforming ideas into polished products that are intuitive to
-              use, scalable, and easy to maintain.
+              I'm a{" "}
+              <span className="font-medium text-foreground">
+                frontend-focused full-stack developer
+              </span>{" "}
+              passionate about building modern web applications that combine{" "}
+              <span className="font-medium text-foreground">
+                clean architecture
+              </span>
+              , responsive design, and exceptional user experience.
             </p>
 
             <p>
-              Beyond building applications, I continuously refine my
-              problem-solving skills through Data Structures & Algorithms and by
-              developing real-world projects that challenge me to write better
-              software. My goal is to create applications that are not only
-              functional, but also fast, accessible, and thoughtfully designed.
+              I enjoy turning ideas into polished products that are{" "}
+              <span className="font-medium text-foreground">
+                fast, accessible, and scalable
+              </span>
+              . Whether I'm designing reusable React components, optimizing
+              performance, or refining small UI details, I believe great
+              software comes from thoughtful engineering and continuous
+              iteration.
+            </p>
+
+            <p>
+              Outside of building projects, I continuously strengthen my
+              problem-solving skills through Data Structures & Algorithms while
+              exploring modern frontend practices. I'm always looking for
+              opportunities to learn, improve, and create software that delivers
+              real value to its users.
             </p>
           </div>
         </div>

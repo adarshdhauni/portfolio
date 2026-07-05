@@ -1,16 +1,22 @@
-import { memo } from "react";
-
 const SkillCard = ({ title, skills }) => {
   return (
     <article
       className="
+        group
         rounded-2xl
         border
+        border-border/50
         bg-card
-        p-6
+        p-7
+        shadow-sm
+        transition-all
+        duration-200
+        hover:-translate-y-1
+        hover:border-primary/20
+        hover:shadow-lg
       "
     >
-      <h3 className="text-xl font-semibold">{title}</h3>
+      <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
 
       <div className="mt-6 flex flex-wrap gap-3">
         {skills.map((skill) => (
@@ -19,10 +25,16 @@ const SkillCard = ({ title, skills }) => {
             className="
               rounded-full
               border
-              px-3
+              border-border/60
+              bg-background
+              px-3.5
               py-1.5
               text-sm
+              font-medium
               text-muted-foreground
+              transition-colors
+              duration-200
+              group-hover:border-primary/20
             "
           >
             {skill.name}
@@ -33,4 +45,4 @@ const SkillCard = ({ title, skills }) => {
   );
 };
 
-export default memo(SkillCard);
+export default SkillCard;

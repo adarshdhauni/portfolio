@@ -1,13 +1,32 @@
+import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
-import "./App.css";
-import MainLayout from "./components/layout/MainLayout";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+
+import Home from "./pages/Home";
+import MainLayout from "./components/layout/MainLayout";
+
+import "./App.css";
+
+const router = createBrowserRouter([
+  {
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  useEffect(() => { 
+  useEffect(() => {
     Aos.init({
       duration: 700,
       easing: "ease-out-cubic",
@@ -15,21 +34,7 @@ function App() {
       offset: 80,
       mirror: false,
     });
-
-    Aos.refresh();
   }, []);
-
-  const router = createBrowserRouter([
-    {
-      element: <MainLayout />,
-      children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-      ],
-    },
-  ]);
 
   return (
     <>
