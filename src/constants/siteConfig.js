@@ -18,4 +18,7 @@ export const SITE_CONFIG = {
   leetcode: "https://leetcode.com/u/Adarsh_49/",
 
   resume: "/resume.pdf",
+  siteUrl: "https://your-vercel-url.vercel.app",
+
+  ogImage: "/og-image.png",
 };

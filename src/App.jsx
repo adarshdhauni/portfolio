@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
+  useEffect(() => { 
     Aos.init({
       duration: 700,
       easing: "ease-out-cubic",

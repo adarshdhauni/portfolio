@@ -6,12 +6,14 @@ import "@fontsource/geist-sans";
 import "@fontsource/geist-mono";
 import { Toaster } from "sonner";
 import ThemeProvider from "@/components/common/ThemeProvider";
-import { BrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ThemeProvider>
-      <App />
+      <HelmetProvider>
+        <App />
+      </HelmetProvider>
       <Toaster richColors closeButton position="top-right" />
     </ThemeProvider>
   </StrictMode>,
