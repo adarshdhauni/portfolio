@@ -9,19 +9,23 @@ const Skills = () => {
   return (
     <Section id="skills">
       <Container>
-        <SectionHeading
-          eyebrow="Skills"
-          title="Technologies & Tools"
-          description="Technologies I use to design, build and deploy modern web applications."
-        />
+        <div data-aos="fade-up">
+          <SectionHeading
+            eyebrow="Skills"
+            title="Technologies & Tools"
+            description="Technologies I use to design, build and deploy modern web applications."
+          />
+        </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          {SKILLS.map((category) => (
-            <SkillCard
+          {SKILLS.map((category, index) => (
+            <div
               key={category.category}
-              title={category.category}
-              skills={category.skills}
-            />
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
+              <SkillCard title={category.category} skills={category.skills} />
+            </div>
           ))}
         </div>
       </Container>

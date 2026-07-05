@@ -11,13 +11,19 @@ const Projects = () => {
   return (
     <Section id="projects">
       <Container>
-        <SectionHeading
-          eyebrow="Projects"
-          title="Featured Project"
-          description="A selection of projects that showcase my approach to building modern, scalable, and user-focused web applications."
-        />
+        <div data-aos="fade-up">
+          <SectionHeading
+            eyebrow="Projects"
+            title="Featured Project"
+            description="A selection of projects that showcase my approach to building modern, scalable, and user-focused web applications."
+          />
+        </div>
 
-        {featuredProject && <FeaturedProjectCard project={featuredProject} />}
+        {featuredProject && (
+          <div data-aos="fade-up" data-aos-delay="150">
+            <FeaturedProjectCard project={featuredProject} />
+          </div>
+        )}
       </Container>
     </Section>
   );

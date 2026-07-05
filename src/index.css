@@ -10,7 +10,13 @@ html {
 }
 
 :root {
-  --header-offset: 80px;
+  --header-offset: 72px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-offset: 80px;
+  }
 }
 
 body {

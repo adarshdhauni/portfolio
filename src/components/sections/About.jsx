@@ -7,13 +7,19 @@ const About = () => {
     <Section id="about">
       <Container>
         <div className="mx-auto max-w-3xl">
-          <SectionHeading
-            eyebrow="About"
-            title="About Me"
-            description="A little about who I am and how I approach software development."
-          />
+          <div data-aos="fade-up">
+            <SectionHeading
+              eyebrow="About"
+              title="About Me"
+              description="A little about who I am and how I approach software development."
+            />
+          </div>
 
-          <div className="space-y-6 text-base leading-8 text-muted-foreground">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="150"
+            className="space-y-6 text-base leading-8 text-muted-foreground"
+          >
             <p>
               I enjoy building modern web applications with clean architecture,
               responsive interfaces, and a strong focus on performance. I like

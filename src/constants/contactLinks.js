@@ -39,7 +39,7 @@ export const CONTACT_LINKS = [
 
   {
     label: "Resume",
-    description: "Download PDF",
+    description: "Latest Resume",
     href: SITE_CONFIG.resume,
     external: false,
     icon: FileText,

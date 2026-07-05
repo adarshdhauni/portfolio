@@ -8,7 +8,10 @@ const MainLayout = () => {
   return (
     <PageWrapper>
       <Navbar />
-      <Outlet />
+      <main className="pt-(--header-offset)">
+        <Outlet />
+      </main>
+
       <Footer />
     </PageWrapper>
   );
