@@ -9,5 +9,13 @@ export const SITE_CONFIG = {
   description:
     "I enjoy building fast, scalable and user-focused web applications with clean architecture, thoughtful UI, and great user experiences.",
 
-  email: "adarshdhauni186@gmail.com",
+  email: "your-email@example.com",
+
+  github: "https://github.com/adarshdhauni",
+
+  linkedin: "https://www.linkedin.com/in/adarsh-dhauni-7146903a6/",
+
+  leetcode: "https://leetcode.com/u/Adarsh_49/",
+
+  resume: "/resume.pdf",
 };

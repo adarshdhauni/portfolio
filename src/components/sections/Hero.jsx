@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 import Section from "../common/Section";
 import { buttonVariants } from "../ui/button";
 import profileImage from "@/assets/images/profile.webp";
-import { SOCIAL_LINKS } from "@/constants/sociallinks";
+import { SOCIAL_LINKS } from "@/constants/socialLinks";
 import { SITE_CONFIG } from "@/constants/siteConfig";
 
 const Hero = () => {
