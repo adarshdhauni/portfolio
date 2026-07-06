@@ -2,26 +2,26 @@ const SkillCard = ({ title, skills }) => {
   return (
     <article
       className="
-        group
-        flex
-        h-full
-        flex-col
-        rounded-2xl
-        border
-        border-border/50
-        bg-card
-        p-7
-        shadow-sm
-        transition-all
-        duration-200
-        hover:-translate-y-1
-        hover:border-primary/20
-        hover:shadow-lg
-      "
+    group
+    flex
+    h-full
+    flex-col
+    rounded-3xl
+    border
+    border-border/50
+    bg-card
+    p-8
+    shadow-sm
+    transition-all
+    duration-200
+    hover:-translate-y-1
+    hover:border-primary/20
+    hover:shadow-lg
+  "
     >
       <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
 
-      <div className="mt-6 flex flex-1 flex-wrap content-start gap-3">
+      <div className="mt-6 flex flex-wrap gap-x-3 gap-y-4">
         {skills.map((skill) => (
           <span
             key={skill.name}
