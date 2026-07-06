@@ -15,7 +15,7 @@ const Education = () => {
           <SectionHeading
             eyebrow="Education"
             title="Education & Learning"
-            description="My academic background, hands-on development journey, and commitment to continuously improving as a software engineer."
+            description="My academic background, self-taught development journey, and continuous pursuit of becoming a better software engineer."
           />
         </div>
 

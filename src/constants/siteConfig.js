@@ -2,23 +2,24 @@ export const SITE_CONFIG = {
   name: "Adarsh",
   fullName: "Adarsh Dhauni",
 
-  role: "Full Stack MERN Developer",
+  siteUrl: "https://your-domain.com",
+  ogImage: "/og-image.png",
 
-  headline: "Building modern web experiences with React, Node.js and MongoDB.",
+  role: "Full-Stack Developer",
+
+  headline:
+    "Building modern, scalable web applications with React, Node.js, Express, and MongoDB.",
 
   description:
-    "I enjoy building fast, scalable and user-focused web applications with clean architecture, thoughtful UI, and great user experiences.",
+    "Self-taught full-stack developer passionate about building performant, accessible, and user-focused web applications with clean architecture and thoughtful design.",
 
-  email: "your-email@example.com",
+  email: "adarshdhauni186@gmail.com",
 
-  github: "https://github.com/adarshdhauni",
+  github: "https://github.com/Adarsh-186",
 
   linkedin: "https://www.linkedin.com/in/adarsh-dhauni-7146903a6/",
 
   leetcode: "https://leetcode.com/u/Adarsh_49/",
 
   resume: "/resume.pdf",
-  siteUrl: "https://your-vercel-url.vercel.app",
-
-  ogImage: "/og-image.png",
 };

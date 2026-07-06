@@ -11,7 +11,7 @@ const About = () => {
             <SectionHeading
               eyebrow="About"
               title="About Me"
-              description="A little about who I am and how I approach software development."
+              description="A little about my journey into software development and the way I approach building applications."
             />
           </div>
 
@@ -21,34 +21,40 @@ const About = () => {
             className="space-y-7 text-[17px] leading-8 text-muted-foreground"
           >
             <p>
-              I'm a{" "}
+              I didn't start my journey in computer science. While pursuing a{" "}
+              <span className="font-medium text-foreground">BBA</span>, I was
+              searching for a direction and discovered software development
+              almost by chance. What initially felt like learning an entirely
+              new language gradually turned into something I genuinely enjoyed.
+              The more I built, the more curious I became, and that curiosity
+              eventually grew into a passion for creating software.
+            </p>
+
+            <p>
+              Today, I'm a{" "}
               <span className="font-medium text-foreground">
-                frontend-focused full-stack developer
+                self-taught full-stack developer
               </span>{" "}
-              passionate about building modern web applications that combine{" "}
-              <span className="font-medium text-foreground">
-                clean architecture
-              </span>
-              , responsive design, and exceptional user experience.
+              who enjoys building complete web applications from frontend
+              interfaces to backend systems. I care about writing clean,
+              maintainable code and creating software that is fast, accessible,
+              and enjoyable to use. Whether I'm designing polished user
+              interfaces, integrating APIs, structuring application
+              architecture, debugging complex issues, or learning a new
+              technology, I genuinely enjoy every part of the development
+              process.
             </p>
 
             <p>
-              I enjoy turning ideas into polished products that are{" "}
+              Beyond building projects, I continuously improve my
+              problem-solving skills through{" "}
               <span className="font-medium text-foreground">
-                fast, accessible, and scalable
-              </span>
-              . Whether I'm designing reusable React components, optimizing
-              performance, or refining small UI details, I believe great
-              software comes from thoughtful engineering and continuous
-              iteration.
-            </p>
-
-            <p>
-              Outside of building projects, I continuously strengthen my
-              problem-solving skills through Data Structures & Algorithms while
-              exploring modern frontend practices. I'm always looking for
-              opportunities to learn, improve, and create software that delivers
-              real value to its users.
+                Data Structures & Algorithms
+              </span>{" "}
+              while exploring modern technologies and development practices. My
+              goal is to keep learning, keep improving, and build software that
+              delivers meaningful value while growing into an engineer capable
+              of taking products from idea to production.
             </p>
           </div>
         </div>

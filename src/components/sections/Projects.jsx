@@ -15,7 +15,7 @@ const Projects = () => {
           <SectionHeading
             eyebrow="Projects"
             title="Featured Project"
-            description="A selection of projects that showcase my approach to building modern, scalable, high-performance, and user-focused web applications."
+            description="A featured project that demonstrates my approach to designing, building, and deploying modern full-stack web applications with a strong focus on performance, scalability, and user experience."
           />
         </div>
 

@@ -5,20 +5,20 @@ export const LEARNING = [
     title: "Education",
     icon: GraduationCap,
     description:
-      "Graduated with a Bachelor of Business Administration (BBA). While my academic background is in business, I chose to pursue software engineering by building real-world applications and strengthening my technical skills.",
+      "I earned a Bachelor of Business Administration (BBA), but discovering software development gave me the direction I had been searching for. As a self-taught developer, I've built my skills through hands-on projects, consistent learning, and practical experience.",
   },
 
   {
-    title: "Full Stack Development",
+    title: "Full-Stack Development",
     icon: Code2,
     description:
-      "Focused on building full-stack MERN applications using React, Node.js, Express, and MongoDB. I enjoy creating scalable, responsive, and performance-focused applications with clean architecture and reusable components.",
+      "I build modern full-stack web applications using React, Node.js, Express, and MongoDB with a strong emphasis on clean architecture, performance, maintainability, and user experience. I enjoy turning ideas into reliable products that are ready for real-world use.",
   },
 
   {
     title: "Problem Solving",
     icon: BrainCircuit,
     description:
-      "Continuously improving my problem-solving skills through Data Structures & Algorithms and LeetCode practice to become a stronger software engineer and prepare for technical interviews.",
+      "Alongside building applications, I regularly practice Data Structures & Algorithms to strengthen my problem-solving skills and write more efficient, scalable code. It continues to shape the way I approach software engineering and technical challenges.",
   },
 ];

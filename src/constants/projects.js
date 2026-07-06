@@ -9,7 +9,7 @@ export const PROJECTS = [
     title: "NOVA E-Commerce Platform",
 
     description:
-      "A full-stack MERN e-commerce platform featuring secure authentication, an admin dashboard, advanced product discovery, responsive design, and performance-focused architecture.",
+      "A production-inspired full-stack MERN e-commerce platform built with a focus on performance, scalability, and maintainable architecture. It features secure authentication, an admin dashboard, advanced product discovery, responsive design, and an optimized shopping experience across devices.",
 
     image: ecommerceImage,
 
@@ -24,16 +24,17 @@ export const PROJECTS = [
       "Node.js",
       "Express.js",
       "MongoDB",
+      "Mongoose",
       "Tailwind CSS",
     ],
 
     highlights: [
-      "JWT Authentication",
+      "Secure JWT Authentication",
       "Admin Dashboard",
-      "Advanced Product Filtering",
-      "Responsive Design",
-      "Performance Optimized",
-      "Image Optimization",
+      "Advanced Search & Filtering",
+      "Responsive Experience",
+      "Performance Optimization",
+      "Optimized Image Delivery",
     ],
   },
 ];

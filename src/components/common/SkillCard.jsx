@@ -3,6 +3,9 @@ const SkillCard = ({ title, skills }) => {
     <article
       className="
         group
+        flex
+        h-full
+        flex-col
         rounded-2xl
         border
         border-border/50
@@ -18,7 +21,7 @@ const SkillCard = ({ title, skills }) => {
     >
       <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
 
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-6 flex flex-1 flex-wrap content-start gap-3">
         {skills.map((skill) => (
           <span
             key={skill.name}

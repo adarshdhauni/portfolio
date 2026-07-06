@@ -13,7 +13,7 @@ const Skills = () => {
           <SectionHeading
             eyebrow="Skills"
             title="Technologies & Tools"
-            description="A collection of technologies, frameworks, and tools I use to build fast, scalable, and maintainable web applications."
+            description="The technologies, frameworks, and tools I use to design, build, and deploy modern full-stack web applications."
           />
         </div>
 
@@ -23,6 +23,7 @@ const Skills = () => {
               key={category.category}
               data-aos="fade-up"
               data-aos-delay={index * 100}
+              className="h-full"
             >
               <SkillCard title={category.category} skills={category.skills} />
             </div>

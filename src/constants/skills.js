@@ -3,9 +3,9 @@ export const SKILLS = [
     category: "Frontend",
     skills: [
       { name: "React" },
-      { name: "React Router" },
       { name: "Redux Toolkit" },
       { name: "RTK Query" },
+      { name: "React Router" },
       { name: "Tailwind CSS" },
       { name: "Vite" },
     ],
@@ -31,9 +31,9 @@ export const SKILLS = [
       { name: "Git" },
       { name: "GitHub" },
       { name: "Postman" },
+      { name: "MongoDB Atlas" },
       { name: "Railway" },
       { name: "Vercel" },
-      { name: "MongoDB Atlas" },
     ],
   },
 

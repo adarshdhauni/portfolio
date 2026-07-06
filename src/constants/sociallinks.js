@@ -14,7 +14,7 @@ export const SOCIAL_LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "",
+    href: "https://www.linkedin.com/in/adarsh-dhauni-7146903a6/",
     icon: FaLinkedinIn,
   },
 ];

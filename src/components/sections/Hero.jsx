@@ -100,39 +100,58 @@ const Hero = () => {
           </div>
 
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-5">
-            <div
-              className="
-                overflow-hidden
-                rounded-3xl
-                border
-                border-border/50
-                bg-muted
-                shadow-xl
-                transition-shadow
-                duration-300
-                hover:shadow-2xl
-              "
-            >
-              <img
-                src={profileImage}
-                alt={SITE_CONFIG.fullName}
-                width={600}
-                height={800}
-                loading="eager"
-                decoding="async"
-                fetchPriority="high"
+            <div className="relative">
+              <div
+                aria-hidden="true"
                 className="
-                  h-full
-                  w-full
-                  max-w-72
-                  object-cover
-                  transition-transform
-                  duration-500
-                  hover:scale-[1.03]
-                  sm:max-w-xs
-                  md:max-w-sm
-                "
+        absolute
+        inset-0
+        -z-10
+        scale-110
+        rounded-full
+        bg-primary/8
+        blur-3xl
+      "
               />
+
+              <div
+                className="
+        overflow-hidden
+        rounded-[2rem]
+        border
+        border-border/50
+        bg-card
+        p-2
+        shadow-[0_12px_40px_rgba(0,0,0,0.08)]
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:shadow-[0_24px_70px_rgba(0,0,0,0.12)]
+      "
+              >
+                <img
+                  src={profileImage}
+                  alt={SITE_CONFIG.fullName}
+                  width={600}
+                  height={800}
+                  loading="eager"
+                  decoding="async"
+                  fetchPriority="high"
+                  className="
+          block
+          h-full
+          w-full
+          max-w-72
+          rounded-[1.5rem]
+          object-cover
+          transition-transform
+          duration-500
+          hover:scale-[1.015]
+          sm:max-w-xs
+          md:max-w-sm
+        "
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Menu } from "lucide-react";
 
 import Container from "./Container";
 import ThemeToggle from "../common/ThemeToggle";
@@ -10,33 +9,28 @@ import { ChevronRight, Menu } from "lucide-react";
 import { SITE_CONFIG } from "@/constants/siteConfig";
 import { NAV_LINKS } from "@/constants/navigation";
 import useActiveSection from "@/hooks/useActiveSection";
+import useScrolled from "@/hooks/useScroll";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const activeSection = useActiveSection();
+  const scrolled = useScrolled();
+
   const [open, setOpen] = useState(false);
 
   const closeSheet = () => setOpen(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 pt-4">
+    <header className="fixed inset-x-0 top-0 z-50 pt-3 md:pt-4">
       <Container>
         <nav
           aria-label="Primary navigation"
-          className="
-            flex
-            h-15
-            md:h-17
-            items-center
-            justify-between
-            rounded-2xl
-            border
-            border-border/30
-            bg-background/80
-            px-6
-            shadow-[0_8px_30px_rgb(0_0_0/0.04)]
-            backdrop-blur-xl
-          "
+          className={cn(
+            "will-change-transform flex h-15 md:h-17 items-center justify-between rounded-2xl border px-6 backdrop-blur-xl transition-all duration-300",
+            scrolled
+              ? "border-border/60 bg-background/90 shadow-[0_12px_40px_rgb(0_0_0/0.08)]"
+              : "border-border/30 bg-background/70 shadow-none",
+          )}
         >
           <a
             href="#hero"
@@ -47,6 +41,7 @@ const Navbar = () => {
               transition-colors
               duration-200
               hover:text-primary
+              hover:opacity-90
             "
           >
             {SITE_CONFIG.name}
@@ -70,7 +65,7 @@ const Navbar = () => {
                     <span
                       aria-hidden="true"
                       className={cn(
-                        "absolute -bottom-1.5 left-0 h-px w-full origin-left scale-x-0 bg-primary transition-transform duration-200",
+                        "absolute -bottom-1.5 left-0 h-0.5 w-full rounded-full origin-left scale-x-0 bg-primary transition-transform duration-200",
                         isActive && "scale-x-100",
                       )}
                     />
@@ -89,7 +84,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download resume"
-              className={buttonVariants()}
+              className={buttonVariants({ className: "px-5" })}
             >
               Resume
             </a>
@@ -111,7 +106,7 @@ const Navbar = () => {
                 <Menu className="size-5" />
               </SheetTrigger>
 
-              <SheetContent side="right" className="w-[360px] p-6 sm:max-w-sm">
+              <SheetContent side="right" className="w-full max-w-sm p-6">
                 <div className="flex h-full flex-col">
                   <div className="border-b border-border/50 pb-6">
                     <a

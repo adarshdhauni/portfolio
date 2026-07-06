@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 import Home from "./pages/Home";
 import MainLayout from "./components/layout/MainLayout";
+import NotFound from "./pages/NotFound";
 
 import "./App.css";
 
