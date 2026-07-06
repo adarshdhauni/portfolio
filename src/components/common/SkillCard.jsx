@@ -26,19 +26,21 @@ const SkillCard = ({ title, skills }) => {
           <span
             key={skill.name}
             className="
-              rounded-full
-              border
-              border-border/60
-              bg-background
-              px-3.5
-              py-1.5
-              text-sm
-              font-medium
-              text-muted-foreground
-              transition-colors
-              duration-200
-              group-hover:border-primary/20
-            "
+  rounded-full
+  border
+  border-border/60
+  bg-background
+  px-3.5
+  py-1.5
+  text-sm
+  font-medium
+  text-muted-foreground
+  transition-colors
+  duration-200
+  group-hover:border-primary/20
+  hover:bg-primary
+  hover:text-primary-foreground
+"
           >
             {skill.name}
           </span>
