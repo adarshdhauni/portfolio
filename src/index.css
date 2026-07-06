@@ -45,7 +45,6 @@ body {
   background-clip: content-box;
 }
 
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: hsl(var(--border)) transparent;
