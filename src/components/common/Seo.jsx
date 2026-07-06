@@ -20,25 +20,37 @@ const Seo = ({
       <meta name="description" content={description} />
       <meta
         name="keywords"
-        content="Adarsh Dhauni, React Developer, Frontend Developer, Full Stack Developer, JavaScript, Node.js, Express.js, MongoDB, Tailwind CSS, Portfolio"
+        content="Adarsh Dhauni, Full-Stack Developer, React, Node.js, Express.js, MongoDB, JavaScript, Tailwind CSS, Portfolio"
       />
       <meta name="author" content={SITE_CONFIG.fullName} />
       <meta name="robots" content="index, follow" />
       <meta name="theme-color" content="#000000" />
 
+      <link rel="canonical" href={url} />
+
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE_CONFIG.fullName} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
+      <meta property="og:image" content={image} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta
+        property="og:image:alt"
+        content="Adarsh Dhauni — Full-Stack Developer Portfolio"
+      />
+      <meta property="og:locale" content="en_US" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-
-      <link rel="canonical" href={url} />
+      <meta
+        name="twitter:image:alt"
+        content="Adarsh Dhauni — Full-Stack Developer Portfolio"
+      />
     </Helmet>
   );
 };

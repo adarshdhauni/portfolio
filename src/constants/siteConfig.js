@@ -1,9 +1,8 @@
 export const SITE_CONFIG = {
   name: "Adarsh",
   fullName: "Adarsh Dhauni",
-
-  siteUrl: "https://portfolio-xi-silk-b3un2mc452.vercel.app/",
-  ogImage: "/og-image.png",
+  siteUrl: "https://portfolio-xi-silk-b3un2mc452.vercel.app",
+  ogImage: "https://portfolio-xi-silk-b3un2mc452.vercel.app/og-image.jpg",
 
   role: "Full-Stack Developer",
 
