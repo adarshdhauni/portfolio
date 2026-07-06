@@ -1,6 +1,4 @@
 User-agent: *
-
 Allow: /
 
-Sitemap:
-https://adarsh.dev/sitemap.xml
+Sitemap: https://portfolio-xi-silk-b3un2mc452.vercel.app/sitemap.xml
