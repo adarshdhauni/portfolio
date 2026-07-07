@@ -1,6 +1,6 @@
-import ecommerce600 from "@/assets/images/ecommerce-600.webp";
-import ecommerce900 from "@/assets/images/ecommerce-900.webp";
-import ecommerce1200 from "@/assets/images/ecommerce-1200.webp";
+import ecommerce600 from "@/assets/images/projects/ecommerce-600.webp";
+import ecommerce900 from "@/assets/images/projects/ecommerce-900.webp";
+import ecommerce1200 from "@/assets/images/projects/ecommerce-1200.webp";
 
 export const PROJECTS = [
   {
