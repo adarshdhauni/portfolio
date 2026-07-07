@@ -29,8 +29,9 @@ const Hero = () => {
       className="
         flex
         min-h-[calc(100svh-var(--header-offset))]
+        scroll-mt-(--header-offset)
         items-start
-        pt-10
+        pt-8
         lg:items-center
         lg:pt-0
       "

@@ -5,7 +5,7 @@ const Section = ({ children, className, id, ...props }) => {
     <section
       id={id}
       className={cn(
-        "scroll-mt-[calc(var(--header-offset)+1rem)] py-24 md:py-28",
+        "scroll-mt-(--header-offset) py-20 md:py-28",
         className,
       )}
       {...props}
