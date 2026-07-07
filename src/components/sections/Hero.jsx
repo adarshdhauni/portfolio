@@ -103,7 +103,14 @@ const Hero = () => {
           </div>
 
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-5">
-            <div className="relative">
+            <div
+              className="
+    relative
+    w-72
+    sm:w-80
+    md:w-96
+  "
+            >
               <div
                 aria-hidden="true"
                 className="
@@ -119,18 +126,19 @@ const Hero = () => {
 
               <div
                 className="
-        overflow-hidden
-        rounded-[2rem]
-        border
-        border-border/50
-        bg-card
-        p-2
-        shadow-[0_12px_40px_rgba(0,0,0,0.08)]
-        transition-all
-        duration-300
-        hover:-translate-y-1
-        hover:shadow-[0_24px_70px_rgba(0,0,0,0.12)]
-      "
+    w-full
+    overflow-hidden
+    rounded-[2rem]
+    border
+    border-border/50
+    bg-card
+    p-2
+    shadow-[0_12px_40px_rgba(0,0,0,0.08)]
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    hover:shadow-[0_24px_70px_rgba(0,0,0,0.12)]
+  "
               >
                 <img
                   src={profile800}
@@ -151,18 +159,15 @@ const Hero = () => {
                   fetchPriority="high"
                   decoding="async"
                   className="
-    block
-    h-full
-    w-full
-    max-w-72
-    rounded-[1.5rem]
-    object-cover
-    transition-transform
-    duration-500
-    hover:scale-[1.015]
-    sm:max-w-xs
-    md:max-w-sm
-  "
+block
+w-full
+h-auto
+rounded-[1.5rem]
+object-cover
+transition-transform
+duration-500
+hover:scale-[1.015]
+"
                 />
               </div>
             </div>
