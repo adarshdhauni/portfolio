@@ -107,7 +107,7 @@ const Navbar = () => {
               </SheetTrigger>
 
               <SheetContent side="right" className="w-full max-w-sm p-6">
-                <div className="flex h-full flex-col">
+                <div className="flex h-full flex-col overflow-y-auto">
                   <div className="border-b border-border/50 pb-6">
                     <a
                       href="#hero"
