@@ -7,9 +7,9 @@ const FeaturedProjectCard = ({ project }) => {
   const {
     title,
     description,
-    ecommerce600,
-    ecommerce900,
-    ecommerce1200,
+    image600,
+    image900,
+    image1200,
     github,
     live,
     technologies,
@@ -51,11 +51,11 @@ const FeaturedProjectCard = ({ project }) => {
               className="block h-full cursor-pointer"
             >
               <img
-                src={ecommerce1200}
+                src={image1200}
                 srcSet={`
-    ${ecommerce600} 600w,
-    ${ecommerce900} 900w,
-    ${ecommerce1200} 1200w
+    ${image600} 600w,
+    ${image900} 900w,
+    ${image1200} 1200w
   `}
                 sizes="
     (max-width: 640px) 100vw,
