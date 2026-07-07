@@ -24,8 +24,8 @@ const FeaturedProjectCard = ({ project }) => {
     hover:shadow-[0_20px_60px_rgb(0_0_0/0.08)]
   "
     >
-      <div className="grid items-stretch lg:grid-cols-2">
-        <div className="p-2 lg:p-3">
+      <div className="grid items-stretch gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="flex items-center p-3">
           <div
             className="
           aspect-16/10
