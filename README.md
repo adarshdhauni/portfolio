@@ -166,34 +166,26 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 
 ### Frontend
 
-![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-
-![JavaScript](https://img.shields.io/badge/JavaScript-ES2025-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
 ### Styling
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![CVA](https://img.shields.io/badge/class--variance--authority-18181B?style=flat-square)
-
 ![clsx](https://img.shields.io/badge/clsx-18181B?style=flat-square)
-
 ![tailwind-merge](https://img.shields.io/badge/tailwind--merge-18181B?style=flat-square)
 
 ### Routing
 
-![React Router](https://img.shields.io/badge/React_Router-7-CA4245?style=flat-square&logo=reactrouter&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=reactrouter&logoColor=white)
 
 ### UI
 
 ![Base UI](https://img.shields.io/badge/Base_UI-18181B?style=flat-square)
-
 ![Sonner](https://img.shields.io/badge/Sonner-18181B?style=flat-square)
-
 ![lucide-react](https://img.shields.io/badge/lucide--react-18181B?style=flat-square&logo=lucide&logoColor=white)
-
 ![react-icons](https://img.shields.io/badge/react--icons-18181B?style=flat-square)
-
 ![next-themes](https://img.shields.io/badge/next--themes-18181B?style=flat-square)
 
 </td>
@@ -214,10 +206,8 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 
 ### Tooling
 
-![Vite](https://img.shields.io/badge/Vite_8-646CFF?style=flat-square&logo=vite&logoColor=white)
-
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white)
-
 ![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)
 
 ### Deployment
@@ -230,7 +220,7 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 </table>
 
 > [!NOTE]
-> Framer Motion remains listed as a dependency for future experimentation but is not currently used. All animations are implemented with **AOS** to keep the production bundle smaller and maintain excellent runtime performance.
+> **Framer Motion** is currently included as a dependency for future experimentation but is not used in production. Scroll animations are implemented with **AOS** to keep the application lightweight while maintaining smooth, performant interactions.
 
 ---
 
