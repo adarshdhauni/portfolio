@@ -139,11 +139,7 @@ const Hero = () => {
     ${profile600} 600w,
     ${profile800} 800w
   `}
-                  sizes="
-    (max-width: 640px) 288px,
-    (max-width: 768px) 320px,
-    384px
-  "
+                  sizes="(max-width: 1024px) 288px, 384px"
                   alt={SITE_CONFIG.fullName}
                   width={800}
                   height={1067}
