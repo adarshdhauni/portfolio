@@ -317,14 +317,37 @@ portfolio/
 
 <table>
 <tr>
-<td align="center" width="33%"><img src="src/assets/images/screenshots/desktop/desktop-hero.png" width="280" alt="Desktop hero section" /><br/><sub><strong>Hero</strong></sub></td>
-<td align="center" width="33%"><img src="src/assets/images/screenshots/desktop/desktop-skills.png" width="280" alt="Desktop skills section" /><br/><sub><strong>Skills</strong></sub></td>
-<td align="center" width="33%"><img src="src/assets/images/screenshots/desktop/desktop-projects.png" width="280" alt="Desktop projects section" /><br/><sub><strong>Projects</strong></sub></td>
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/desktop/desktop-hero.png" width="300" alt="Hero section" /><br/>
+<sub><strong>Hero</strong></sub>
+</td>
+
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/desktop/desktop-skills.png" width="300" alt="Skills section" /><br/>
+<sub><strong>Skills</strong></sub>
+</td>
+
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/desktop/desktop-projects.png" width="300" alt="Projects section" /><br/>
+<sub><strong>Projects</strong></sub>
+</td>
 </tr>
+
 <tr>
-<td align="center" width="33%"><img src="src/assets/images/screenshots/desktop/desktop-education.png" width="280" alt="Desktop education section" /><br/><sub><strong>Education</strong></sub></td>
-<td align="center" width="33%"><img src="src/assets/images/screenshots/desktop/desktop-contact.png" width="280" alt="Desktop contact section" /><br/><sub><strong>Contact</strong></sub></td>
-<td align="center" width="33%"><img src="src/assets/images/screenshots/desktop/desktop-darkMode.png" width="280" alt="Desktop dark mode" /><br/><sub><strong>Dark Mode</strong></sub></td>
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/desktop/desktop-education.png" width="300" alt="Education section" /><br/>
+<sub><strong>Education</strong></sub>
+</td>
+
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/desktop/desktop-contact.png" width="300" alt="Contact section" /><br/>
+<sub><strong>Contact</strong></sub>
+</td>
+
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/desktop/desktop-darkMode.png" width="300" alt="Dark mode" /><br/>
+<sub><strong>Dark Mode</strong></sub>
+</td>
 </tr>
 </table>
 
@@ -332,16 +355,44 @@ portfolio/
 
 <table>
 <tr>
-<td align="center" width="25%"><img src="src/assets/images/screenshots/mobile/mobile-navigation.png" width="180" alt="Mobile navigation drawer" /><br/><sub><strong>Navigation</strong></sub></td>
-<td align="center" width="25%"><img src="src/assets/images/screenshots/mobile/mobile-hero.png" width="180" alt="Mobile hero section" /><br/><sub><strong>Hero</strong></sub></td>
-<td align="center" width="25%"><img src="src/assets/images/screenshots/mobile/mobile-skills.png" width="180" alt="Mobile skills section" /><br/><sub><strong>Skills</strong></sub></td>
-<td align="center" width="25%"><img src="assets/images/screenshots/mobile/mobile-projects.png" width="180" alt="Mobile projects section" /><br/><sub><strong>Projects</strong></sub></td>
+<td align="center" width="25%">
+<img src="src/assets/images/screenshots/mobile/mobile-navigation.png" width="200" alt="Navigation drawer" /><br/>
+<sub><strong>Navigation</strong></sub>
+</td>
+
+<td align="center" width="25%">
+<img src="src/assets/images/screenshots/mobile/mobile-hero.png" width="200" alt="Hero section" /><br/>
+<sub><strong>Hero</strong></sub>
+</td>
+
+<td align="center" width="25%">
+<img src="src/assets/images/screenshots/mobile/mobile-skills.png" width="200" alt="Skills section" /><br/>
+<sub><strong>Skills</strong></sub>
+</td>
+
+<td align="center" width="25%">
+<img src="src/assets/images/screenshots/mobile/mobile-projects.png" width="200" alt="Projects section" /><br/>
+<sub><strong>Projects</strong></sub>
+</td>
 </tr>
+</table>
+
+<table>
 <tr>
-<td align="center" width="25%"><img src="src/assets/images/screenshots/mobile/mobile-education.png" width="180" alt="Mobile education section" /><br/><sub><strong>Education</strong></sub></td>
-<td align="center" width="25%"><img src="src/assets/images/screenshots/mobile/mobile-contact.png" width="180" alt="Mobile contact section" /><br/><sub><strong>Contact</strong></sub></td>
-<td align="center" width="25%"><img src="src/assets/images/screenshots/mobile/mobile-darkMode.png" width="180" alt="Mobile dark mode" /><br/><sub><strong>Dark Mode</strong></sub></td>
-<td width="25%"></td>
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/mobile/mobile-education.png" width="200" alt="Education section" /><br/>
+<sub><strong>Education</strong></sub>
+</td>
+
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/mobile/mobile-contact.png" width="200" alt="Contact section" /><br/>
+<sub><strong>Contact</strong></sub>
+</td>
+
+<td align="center" width="33.33%">
+<img src="src/assets/images/screenshots/mobile/mobile-darkMode.png" width="200" alt="Dark mode" /><br/>
+<sub><strong>Dark Mode</strong></sub>
+</td>
 </tr>
 </table>
 
