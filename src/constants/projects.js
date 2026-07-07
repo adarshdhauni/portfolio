@@ -1,4 +1,6 @@
-import ecommerceImage from "@/assets/images/projects/ecommerce-platform.webp";
+import ecommerce600 from "@/assets/images/ecommerce-600.webp";
+import ecommerce900 from "@/assets/images/ecommerce-900.webp";
+import ecommerce1200 from "@/assets/images/ecommerce-1200.webp";
 
 export const PROJECTS = [
   {
@@ -11,7 +13,9 @@ export const PROJECTS = [
     description:
       "A production-inspired full-stack MERN e-commerce platform built with a focus on performance, scalability, and maintainable architecture. It features secure authentication, an admin dashboard, advanced product discovery, responsive design, and an optimized shopping experience across devices.",
 
-    image: ecommerceImage,
+    image600: ecommerce600,
+    image900: ecommerce900,
+    image1200: ecommerce1200,
 
     github: "https://github.com/adarshdhauni/ecommerce-platform",
 

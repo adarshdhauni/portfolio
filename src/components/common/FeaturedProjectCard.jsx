@@ -4,8 +4,17 @@ import { SiGithub } from "react-icons/si";
 import { buttonVariants } from "@/components/ui/button";
 
 const FeaturedProjectCard = ({ project }) => {
-  const { title, description, image, github, live, technologies, highlights } =
-    project;
+  const {
+    title,
+    description,
+    ecommerce600,
+    ecommerce900,
+    ecommerce1200,
+    github,
+    live,
+    technologies,
+    highlights,
+  } = project;
 
   return (
     <article
@@ -42,21 +51,31 @@ const FeaturedProjectCard = ({ project }) => {
               className="block h-full cursor-pointer"
             >
               <img
-                src={image}
+                src={ecommerce1200}
+                srcSet={`
+    ${ecommerce600} 600w,
+    ${ecommerce900} 900w,
+    ${ecommerce1200} 1200w
+  `}
+                sizes="
+    (max-width: 640px) 100vw,
+    (max-width: 1024px) 50vw,
+    45vw
+  "
                 alt={`${title} project screenshot`}
                 width={1200}
                 height={771}
                 loading="lazy"
                 decoding="async"
                 className="
-              h-full
-              w-full
-              object-cover
-              transition-transform
-              duration-500
-              group-hover:scale-[1.015]
-              group-hover:brightness-[1.03]
-            "
+    h-full
+    w-full
+    object-cover
+    transition-transform
+    duration-500
+    group-hover:scale-[1.015]
+    group-hover:brightness-[1.03]
+  "
               />
             </a>
           </div>

@@ -1,7 +1,9 @@
 import Container from "../layout/Container";
 import { buttonVariants } from "../ui/button";
 
-import profileImage from "@/assets/images/profile.webp";
+import profile400 from "@/assets/images/profile-400.webp";
+import profile600 from "@/assets/images/profile-600.webp";
+import profile800 from "@/assets/images/profile-800.webp";
 
 import { SOCIAL_LINKS } from "@/constants/sociallinks";
 import { SITE_CONFIG } from "@/constants/siteConfig";
@@ -131,26 +133,36 @@ const Hero = () => {
       "
               >
                 <img
-                  src={profileImage}
+                  src={profile800}
+                  srcSet={`
+    ${profile400} 400w,
+    ${profile600} 600w,
+    ${profile800} 800w
+  `}
+                  sizes="
+    (max-width: 640px) 288px,
+    (max-width: 768px) 320px,
+    384px
+  "
                   alt={SITE_CONFIG.fullName}
-                  width={600}
-                  height={800}
+                  width={800}
+                  height={1067}
                   loading="eager"
-                  decoding="async"
                   fetchPriority="high"
+                  decoding="async"
                   className="
-          block
-          h-full
-          w-full
-          max-w-72
-          rounded-[1.5rem]
-          object-cover
-          transition-transform
-          duration-500
-          hover:scale-[1.015]
-          sm:max-w-xs
-          md:max-w-sm
-        "
+    block
+    h-full
+    w-full
+    max-w-72
+    rounded-[1.5rem]
+    object-cover
+    transition-transform
+    duration-500
+    hover:scale-[1.015]
+    sm:max-w-xs
+    md:max-w-sm
+  "
                 />
               </div>
             </div>
