@@ -311,89 +311,89 @@ portfolio/
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Desktop
 
 <table>
-<tr>
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/desktop/desktop-hero.png" width="300" alt="Hero section" /><br/>
-<sub><strong>Hero</strong></sub>
-</td>
+  <tr>
+    <td align="center" width="50%">
+      <img src="src/assets/images/screenshots/desktop/desktop-hero.png" alt="Hero" width="100%">
+      <br><sub><b>Hero</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="src/assets/images/screenshots/desktop/desktop-skills.png" alt="Skills" width="100%">
+      <br><sub><b>Skills</b></sub>
+    </td>
+  </tr>
 
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/desktop/desktop-skills.png" width="300" alt="Skills section" /><br/>
-<sub><strong>Skills</strong></sub>
-</td>
+  <tr>
+    <td align="center">
+      <img src="src/assets/images/screenshots/desktop/desktop-projects.png" alt="Projects" width="100%">
+      <br><sub><b>Projects</b></sub>
+    </td>
+    <td align="center">
+      <img src="src/assets/images/screenshots/desktop/desktop-education.png" alt="Education" width="100%">
+      <br><sub><b>Education</b></sub>
+    </td>
+  </tr>
 
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/desktop/desktop-projects.png" width="300" alt="Projects section" /><br/>
-<sub><strong>Projects</strong></sub>
-</td>
-</tr>
-
-<tr>
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/desktop/desktop-education.png" width="300" alt="Education section" /><br/>
-<sub><strong>Education</strong></sub>
-</td>
-
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/desktop/desktop-contact.png" width="300" alt="Contact section" /><br/>
-<sub><strong>Contact</strong></sub>
-</td>
-
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/desktop/desktop-darkMode.png" width="300" alt="Dark mode" /><br/>
-<sub><strong>Dark Mode</strong></sub>
-</td>
-</tr>
+  <tr>
+    <td align="center">
+      <img src="src/assets/images/screenshots/desktop/desktop-contact.png" alt="Contact" width="100%">
+      <br><sub><b>Contact</b></sub>
+    </td>
+    <td align="center">
+      <img src="src/assets/images/screenshots/desktop/desktop-darkMode.png" alt="Dark Mode" width="100%">
+      <br><sub><b>Dark Mode</b></sub>
+    </td>
+  </tr>
 </table>
+
+---
 
 ### Mobile
 
 <table>
-<tr>
-<td align="center" width="25%">
-<img src="src/assets/images/screenshots/mobile/mobile-navigation.png" width="200" alt="Navigation drawer" /><br/>
-<sub><strong>Navigation</strong></sub>
-</td>
+  <tr>
+    <td align="center" width="50%">
+      <img src="src/assets/images/screenshots/mobile/mobile-navigation.png" alt="Navigation" width="100%">
+      <br><sub><b>Navigation</b></sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="src/assets/images/screenshots/mobile/mobile-hero.png" alt="Hero" width="100%">
+      <br><sub><b>Hero</b></sub>
+    </td>
+  </tr>
 
-<td align="center" width="25%">
-<img src="src/assets/images/screenshots/mobile/mobile-hero.png" width="200" alt="Hero section" /><br/>
-<sub><strong>Hero</strong></sub>
-</td>
+  <tr>
+    <td align="center">
+      <img src="src/assets/images/screenshots/mobile/mobile-skills.png" alt="Skills" width="100%">
+      <br><sub><b>Skills</b></sub>
+    </td>
+    <td align="center">
+      <img src="src/assets/images/screenshots/mobile/mobile-projects.png" alt="Projects" width="100%">
+      <br><sub><b>Projects</b></sub>
+    </td>
+  </tr>
 
-<td align="center" width="25%">
-<img src="src/assets/images/screenshots/mobile/mobile-skills.png" width="200" alt="Skills section" /><br/>
-<sub><strong>Skills</strong></sub>
-</td>
+  <tr>
+    <td align="center">
+      <img src="src/assets/images/screenshots/mobile/mobile-education.png" alt="Education" width="100%">
+      <br><sub><b>Education</b></sub>
+    </td>
+    <td align="center">
+      <img src="src/assets/images/screenshots/mobile/mobile-contact.png" alt="Contact" width="100%">
+      <br><sub><b>Contact</b></sub>
+    </td>
+  </tr>
 
-<td align="center" width="25%">
-<img src="src/assets/images/screenshots/mobile/mobile-projects.png" width="200" alt="Projects section" /><br/>
-<sub><strong>Projects</strong></sub>
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/mobile/mobile-education.png" width="200" alt="Education section" /><br/>
-<sub><strong>Education</strong></sub>
-</td>
-
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/mobile/mobile-contact.png" width="200" alt="Contact section" /><br/>
-<sub><strong>Contact</strong></sub>
-</td>
-
-<td align="center" width="33.33%">
-<img src="src/assets/images/screenshots/mobile/mobile-darkMode.png" width="200" alt="Dark mode" /><br/>
-<sub><strong>Dark Mode</strong></sub>
-</td>
-</tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="src/assets/images/screenshots/mobile/mobile-darkMode.png" alt="Dark Mode" width="50%">
+      <br><sub><b>Dark Mode</b></sub>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -575,12 +575,12 @@ This serves the optimized production build locally before deployment.
 
 ## Available Scripts
 
-| Script            | Description                           |
-| ----------------- | ------------------------------------- |
-| `npm run dev`     | Starts the Vite development server    |
-| `npm run build`   | Creates an optimized production build |
-| `npm run preview` | Serves the production build locally   |
-| `npm run lint`    | Runs ESLint across the project        |
+| Script            | Description                                            |
+| ----------------- | ------------------------------------------------------ |
+| `npm run dev`     | Starts the local development server with hot reloading |
+| `npm run build`   | Builds the application for production                  |
+| `npm run preview` | Serves the production build locally for preview        |
+| `npm run lint`    | Lints the codebase using ESLint                        |
 
 ---
 
