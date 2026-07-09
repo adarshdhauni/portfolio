@@ -75,7 +75,7 @@ const FeaturedProjectCard = ({ project }) => {
     object-cover
     transition-transform
     duration-500
-    group-hover:scale-[1.015]
+    group-hover:scale-[1.02]
     group-hover:brightness-[1.03]
   "
               />
@@ -90,22 +90,16 @@ const FeaturedProjectCard = ({ project }) => {
             {description}
           </p>
 
-          <div className="mt-8">
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.16em] text-primary">
-              Highlights
-            </h4>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {highlights.map((highlight) => (
+              <div key={highlight} className="flex items-start gap-3">
+                <CircleCheck className="mt-0.5 size-4.5 shrink-0 text-primary/80" />
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              {highlights.map((highlight) => (
-                <div key={highlight} className="flex items-start gap-3">
-                  <CircleCheck className="mt-0.5 size-5 shrink-0 text-primary" />
-
-                  <span className="text-sm leading-6 text-muted-foreground">
-                    {highlight}
-                  </span>
-                </div>
-              ))}
-            </div>
+                <span className="text-sm leading-6 text-muted-foreground">
+                  {highlight}
+                </span>
+              </div>
+            ))}
           </div>
 
           <div className="mt-8">
@@ -113,7 +107,7 @@ const FeaturedProjectCard = ({ project }) => {
               Technologies
             </h4>
 
-            <div className="flex flex-wrap gap-2.5">
+            <div className="relative z-10 mt-4 flex flex-wrap gap-3">
               {technologies.map((technology) => (
                 <span
                   key={technology}
@@ -144,7 +138,19 @@ const FeaturedProjectCard = ({ project }) => {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div
+            className="
+  relative
+  z-10
+  mt-auto
+  flex
+  flex-wrap
+  gap-4
+  border-t
+  border-border/70
+  pt-6
+"
+          >
             <a
               href={live}
               target="_blank"
@@ -158,7 +164,6 @@ const FeaturedProjectCard = ({ project }) => {
               <ExternalLink className="size-4" />
               Live Demo
             </a>
-
             <a
               href={github}
               target="_blank"
