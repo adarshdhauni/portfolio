@@ -248,55 +248,31 @@ There's no global state library — the only stateful UI lives locally in `Navba
 
 ---
 
-## Folder Structure
+## 📁 Folder Structure
 
 ```text
 portfolio/
 ├── public/
-│   ├── favicon.svg
-│   ├── icons.svg
-│   ├── manifest.webmanifest
-│   ├── og-image.jpg
-│   ├── resume.pdf
-│   ├── robots.txt
-│   └── sitemap.xml
-├── src/
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   ├── main.jsx
-│   ├── assets/
-│   │   ├── images/
-│   │   │   ├── profile-400.webp
-│   │   │   ├── profile-600.webp
-│   │   │   ├── profile-800.webp
-│   │   │   ├── projects/
-│   │   │   │   ├── ecommerce-600.webp
-│   │   │   │   ├── ecommerce-900.webp
-│   │   │   │   └── ecommerce-1200.webp
-│   │   │   └── screenshots/
-│   │   │       ├── desktop/
-│   │   │       └── mobile/
-│   │   └── resume/
-│   │       └── resume.docx
-│   ├── components/
-│   │   ├── common/       # Section wrappers, heading, SEO, cards, theme/error handling
-│   │   ├── layout/       # Navbar, footer, page wrapper, container
-│   │   ├── sections/     # Hero, About, Skills, Projects, Education, Contact
-│   │   └── ui/           # Base UI + Tailwind primitives
-│   ├── constants/        # Nav links, projects, skills, contact links, learning roadmap, site config
-│   ├── hooks/             # Active-section tracking, scroll state
-│   ├── lib/               # Shared utility functions
-│   └── pages/             # Route-level page components
-├── components.json
-├── eslint.config.js
-├── index.html
-├── jsconfig.json
-├── package.json
-├── package-lock.json
-├── README.md
-├── vercel.json
-└── vite.config.js
+└── src/
+    ├── assets/
+    │   ├── images/
+    │   │   ├── projects/
+    │   │   └── screenshots/
+    │   │       ├── desktop/
+    │   │       └── mobile/
+    │   └── resume/
+    │
+    ├── components/
+    │   ├── common/        # Section wrappers, headings, SEO, cards, theme/error handling
+    │   │   └── skills/
+    │   ├── layout/        # Navbar, Footer, Container, MainLayout, PageWrapper
+    │   ├── sections/      # Hero, About, Skills, Projects, Education, Contact
+    │   └── ui/            # Base UI components (shadcn/ui)
+    │
+    ├── constants/         # Navigation, projects, skills, contact links, site config
+    ├── hooks/             # Custom React hooks
+    ├── lib/               # Shared utility functions
+    └── pages/             # Route-level page components
 ```
 
 ---
