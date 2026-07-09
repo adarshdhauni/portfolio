@@ -1,44 +1,62 @@
+import { Code2, Database, Wrench, Braces } from "lucide-react";
+
 export const SKILLS = [
   {
-    category: "Frontend",
+    id: "frontend",
+    title: "Frontend",
+    subtitle: "Modern User Interfaces",
+    description:
+      "Crafting fast, accessible, and responsive user interfaces with the modern React ecosystem.",
+    icon: Code2,
+    span: 12,
     skills: [
-      { name: "React" },
-      { name: "Redux Toolkit" },
-      { name: "RTK Query" },
-      { name: "React Router" },
-      { name: "Tailwind CSS" },
-      { name: "Vite" },
+      "React",
+      "Redux Toolkit",
+      "RTK Query",
+      "React Router",
+      "Tailwind CSS",
+      "Vite",
     ],
   },
 
   {
-    category: "Backend",
+    id: "backend",
+    title: "Backend",
+    subtitle: "Backend Development",
+    description:
+      "Building secure REST APIs, authentication systems, and scalable backend services.",
+    icon: Database,
+    span: 6,
     skills: [
-      { name: "Node.js" },
-      { name: "Express.js" },
-      { name: "MongoDB" },
-      { name: "Mongoose" },
-      { name: "REST APIs" },
-      { name: "JWT" },
-      { name: "Multer" },
-      { name: "Resend" },
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST APIs",
+      "JWT",
+      "Multer",
+      "Resend",
     ],
   },
 
   {
-    category: "Tools",
-    skills: [
-      { name: "Git" },
-      { name: "GitHub" },
-      { name: "Postman" },
-      { name: "MongoDB Atlas" },
-      { name: "Railway" },
-      { name: "Vercel" },
-    ],
+    id: "tools",
+    title: "Tools",
+    subtitle: "Development Workflow",
+    description:
+      "Tools used for version control, testing, deployment, and an efficient development workflow.",
+    icon: Wrench,
+    span: 6,
+    skills: ["Git", "GitHub", "Postman", "MongoDB Atlas", "Railway", "Vercel"],
   },
 
   {
-    category: "Languages",
-    skills: [{ name: "JavaScript" }, { name: "HTML5" }, { name: "CSS3" }],
+    id: "languages",
+    title: "Languages",
+    subtitle: "Core Web Technologies",
+    description: "Core web technologies that power every application I build.",
+    icon: Braces,
+    span: 12,
+    skills: ["JavaScript", "HTML5", "CSS3"],
   },
 ];

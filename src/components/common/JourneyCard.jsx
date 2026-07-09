@@ -13,29 +13,34 @@ const JourneyCard = ({ item }) => {
     p-8
     shadow-sm
     transition-all
-    duration-300
-    hover:-translate-y-1
-    hover:border-primary/20
+    duration-500
+    hover:-translate-y-2
+     hover:bg-card/95
+        hover:border-primary/30
     hover:shadow-[0_18px_50px_rgb(0_0_0/0.08)]
   "
     >
       <div
         className="
-      inline-flex
-      rounded-2xl
-      border
-      border-primary/15
-      bg-primary/10
-      p-3
-      text-primary
-      transition-all
-      duration-300
-      group-hover:border-primary
-      group-hover:bg-primary
-      group-hover:text-primary-foreground
-    "
+flex
+h-14
+w-14
+shrink-0
+items-center
+justify-center
+rounded-2xl
+border
+border-primary/10
+bg-primary/5
+text-primary
+transition-all
+duration-300
+group-hover:scale-105
+group-hover:bg-primary/10
+group-hover:border-primary/20
+"
       >
-        <Icon className="size-6" />
+        <Icon className="h-7 w-7" />
       </div>
 
       <h3 className="mt-6 text-2xl font-semibold tracking-tight">{title}</h3>

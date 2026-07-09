@@ -1,9 +1,7 @@
 import Container from "@/components/layout/Container";
 import Section from "@/components/common/Section";
 import SectionHeading from "@/components/common/SectionHeading";
-import SkillCard from "@/components/common/SkillCard";
-
-import { SKILLS } from "@/constants/skills";
+import SkillsGrid from "@/components/common/skills/SkillsGrid";
 
 const Skills = () => {
   return (
@@ -13,22 +11,11 @@ const Skills = () => {
           <SectionHeading
             eyebrow="Skills"
             title="Technologies & Tools"
-            description="The technologies, frameworks, and tools I use to design, build, and deploy modern full-stack web applications."
+            description="The technologies and tools I use to build modern full-stack web applications."
           />
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 items-stretch">
-          {SKILLS.map((category, index) => (
-            <div
-              key={category.category}
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-              className="h-full"
-            >
-              <SkillCard title={category.category} skills={category.skills} />
-            </div>
-          ))}
-        </div>
+        <SkillsGrid />
       </Container>
     </Section>
   );

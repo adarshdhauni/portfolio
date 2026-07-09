@@ -27,14 +27,16 @@ const FeaturedProjectCard = ({ project }) => {
     bg-card
     shadow-sm
     transition-all
-    duration-300
-    hover:-translate-y-1
-    hover:border-primary/20
+    duration-500
+    ease-out
+    hover:-translate-y-2
+     hover:bg-card/95
+        hover:border-primary/30
     hover:shadow-[0_20px_60px_rgb(0_0_0/0.08)]
   "
     >
       <div className="grid items-stretch gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="flex items-center p-3">
+        <div className="flex items-start p-3">
           <div
             className="
           aspect-16/10
@@ -116,21 +118,25 @@ const FeaturedProjectCard = ({ project }) => {
                 <span
                   key={technology}
                   className="
-                rounded-full
-                border
-                border-border/60
-                bg-background
-                px-3.5
-                py-1.5
-                text-sm
-                font-medium
-                text-muted-foreground
-                transition-all
-                duration-200
-                hover:border-primary/20
-                hover:bg-primary
-                hover:text-primary-foreground
-              "
+        inline-flex
+        select-none
+        items-center
+        rounded-full
+        border
+        border-border/60
+        bg-muted/50
+        px-3.5
+        py-2
+        text-sm
+        font-medium
+        text-muted-foreground
+        transition-all
+        duration-300
+        hover:-translate-y-0.5
+        hover:border-primary/20
+        hover:bg-primary
+        hover:text-primary-foreground
+      "
                 >
                   {technology}
                 </span>
