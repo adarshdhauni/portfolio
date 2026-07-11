@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
 
   email: "adarshdhauni186@gmail.com",
 
-  github: "https://github.com/Adarsh-186",
+  github: "https://github.com/adarshdhauni",
 
   linkedin: "https://www.linkedin.com/in/adarsh-dhauni-7146903a6/",
 
