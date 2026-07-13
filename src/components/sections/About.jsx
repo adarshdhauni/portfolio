@@ -23,11 +23,10 @@ const About = () => {
             <p>
               I didn't start my journey in computer science. While pursuing a{" "}
               <span className="font-medium text-foreground">BBA</span>, I was
-              searching for a direction and discovered software development
-              almost by chance. What initially felt like learning an entirely
-              new language gradually turned into something I genuinely enjoyed.
-              The more I built, the more curious I became, and that curiosity
-              eventually grew into a passion for creating software.
+              trying to figure out what I wanted to do and ended up discovering
+              software development almost by accident. I started building small
+              projects out of curiosity, and somewhere along the way it became
+              something I genuinely enjoyed.
             </p>
 
             <p>
@@ -35,26 +34,21 @@ const About = () => {
               <span className="font-medium text-foreground">
                 self-taught full-stack developer
               </span>{" "}
-              who enjoys building complete web applications from frontend
-              interfaces to backend systems. I care about writing clean,
-              maintainable code and creating software that is fast, accessible,
-              and enjoyable to use. Whether I'm designing polished user
-              interfaces, integrating APIs, structuring application
-              architecture, debugging complex issues, or learning a new
-              technology, I genuinely enjoy every part of the development
-              process.
+              who enjoys building web applications from the database to the
+              frontend. I like working across the stack, whether it's designing
+              APIs, building React interfaces, debugging problems, or improving
+              the way an application is structured. Every project teaches me
+              something new, and that's what keeps me coming back.
             </p>
 
             <p>
-              Beyond building projects, I continuously improve my
-              problem-solving skills through{" "}
+              Outside of building projects, I spend time solving{" "}
               <span className="font-medium text-foreground">
                 Data Structures & Algorithms
               </span>{" "}
-              while exploring modern technologies and development practices. My
-              goal is to keep learning, keep improving, and build software that
-              delivers meaningful value while growing into an engineer capable
-              of taking products from idea to production.
+              problems and learning more about backend architecture and system
+              design. My goal is simple: keep improving, build software I'm
+              proud of, and become a better engineer with every project.
             </p>
           </div>
         </div>

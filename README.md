@@ -294,7 +294,7 @@ portfolio/
       <br><sub><b>Contact</b></sub>
     </td>
     <td align="center">
-      <img src="src/assets/images/screenshots/desktop/desktop-darkMode.png" alt="Dark Mode" width="100%">
+      <img src="src/assets/images/screenshots/desktop/desktop-dark-mode.png" alt="Dark Mode" width="100%">
       <br><sub><b>Dark Mode</b></sub>
     </td>
   </tr>
@@ -340,7 +340,7 @@ portfolio/
 
   <tr>
     <td align="center" colspan="2">
-      <img src="src/assets/images/screenshots/mobile/mobile-darkMode.png" alt="Dark Mode" width="50%">
+      <img src="src/assets/images/screenshots/mobile/mobile-dark-mode.png" alt="Dark Mode" width="50%">
       <br><sub><b>Dark Mode</b></sub>
     </td>
   </tr>

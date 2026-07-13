@@ -5,12 +5,11 @@ export const SITE_CONFIG = {
   ogImage: "https://portfolio-xi-silk-b3un2mc452.vercel.app/portfolio-og.png",
 
   role: "Full-Stack Developer",
-
   headline:
-    "Building modern, scalable web applications with React, Node.js, Express, and MongoDB.",
+    "I build full-stack web applications with React, Node.js, Express, and MongoDB.",
 
   description:
-    "Self-taught full-stack developer passionate about building performant, accessible, and user-focused web applications with clean architecture and thoughtful design.",
+    "I enjoy building software from the database to the frontend and I'm always looking to improve with every project.",
 
   email: "adarshdhauni186@gmail.com",
 
