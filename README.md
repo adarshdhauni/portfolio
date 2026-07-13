@@ -31,10 +31,10 @@ A fast, accessible, SEO-optimized portfolio built with React and Vite to showcas
   <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=reactrouter&logoColor=white" alt="React Router" />
 </p>
 
-[Features](#features) •
-[Architecture](#architecture) •
-[Tech Stack](#tech-stack) •
-[Screenshots](#screenshots) •
+[Features](#-features) •
+[Architecture](#-architecture) •
+[Tech Stack](#-tech-stack) •
+[Screenshots](#-screenshots) •
 [Getting Started](#-getting-started)
 
 </div>
