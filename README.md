@@ -91,7 +91,7 @@ The project intentionally remains **frontend-only** with no backend, authenticat
 
 ---
 
-# 🌐 Live Demo
+## 🌐 Live Demo
 
 ### **🌐 https://portfolio-xi-silk-b3un2mc452.vercel.app/**
 
@@ -99,7 +99,7 @@ Deployed on **Vercel** directly from this repository.
 
 ---
 
-# 💡 Why I Built This
+## 💡 Why I Built This
 
 A portfolio should demonstrate engineering quality—not just describe it.
 
@@ -141,7 +141,7 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 <table>
 <tr>
@@ -492,25 +492,27 @@ This serves the optimized production build locally before deployment.
 | Optimization | Implementation |
 | ------------ | -------------- |
 | **Responsive images** | WebP images delivered through `srcSet` and `sizes` so browsers download the most appropriate asset |
-| **Hero image loading** | Above-the-fold hero image prioritized with `fetchPriority="high"` while below-the-fold images use native lazy loading |
-| **Memoization** | Memoized layout components to reduce unnecessary re-renders |
-| **Animations** | AOS configured with `once: true` so animations run only once per session |
-| **Lightweight architecture** | Static content eliminates client-side data fetching, global state management, and caching overhead |
+| **Image loading** | Above-the-fold hero image prioritized with `fetchPriority="high"` while below-the-fold images use native lazy loading |
+| **Memoization** | `memo()` applied to shared layout components to reduce unnecessary re-renders |
+| **Animations** | AOS configured with `once: true` so animations execute only once per session |
+| **Static architecture** | Frontend-only application with no client-side data fetching, global state management, or API overhead |
 | **Production build** | Optimized production bundles generated with Vite and deployed on Vercel for fast global delivery |
 
 > [!NOTE]
-> Route-level code splitting, lazy-loaded page components, and server-side rendering are not currently implemented. See [Future Improvements](#future-improvements).\
+> Route-level code splitting, lazy-loaded page components, and server-side rendering are not currently implemented. See [Future Improvements](#future-improvements).
 
 ---
 
 ## ♿ Accessibility
 
-- Semantic HTML used throughout the application
-- Keyboard-accessible navigation and interactive elements
-- ARIA labels for navigation, theme toggle, and icon-only controls
-- Visible focus indicators for keyboard users
-- Descriptive alternative text for images where applicable
-- Lighthouse Accessibility score of **99** on both desktop and mobile
+| Feature | Implementation |
+| ------- | -------------- |
+| **Semantic HTML** | Proper use of semantic elements including `<main>`, `<nav>`, `<section>`, and `<footer>` |
+| **Keyboard Navigation** | Interactive elements are keyboard accessible with logical focus order |
+| **Focus Management** | Visible `focus-visible` styles applied to interactive elements for improved keyboard usability |
+| **ARIA Labels** | Applied to navigation, theme toggle, and icon-only controls where appropriate |
+| **Images** | Descriptive `alt` text provided for images where applicable |
+| **Accessibility Audit** | Lighthouse Accessibility score of **99** on both desktop and mobile |
 
 > [!NOTE]
 > Automated accessibility testing (for example, with `axe-core`) has not been implemented yet. Accessibility has been verified through semantic HTML, manual testing, and Lighthouse audits.
@@ -560,26 +562,6 @@ An Error Boundary and custom 404 page ensure runtime errors or invalid routes de
 
 ---
 
-## 📊 Project Statistics
-
-| Metric                | Count |
-| --------------------- | :---: |
-| Total project files   |  78   |
-| Source files (`src`)  |  40   |
-| React components      |  24   |
-| Pages                 |   2   |
-| Layout components     |   5   |
-| Section components    |   6   |
-| Custom hooks          |   2   |
-| Utility modules       |   1   |
-| UI component modules  |   3   |
-| Total assets          |  27   |
-| Optimized WebP images |   6   |
-| Backend               | None  |
-| API endpoints         | None  |
-
----
-
 ## 🚀 Deployment
 
 The application is deployed on **Vercel** and configured through `vercel.json`.
@@ -607,12 +589,29 @@ Automated testing is planned as a future improvement.
 
 ## 🗺️ Future Improvements
 
+### Performance
+
 - [ ] Route-level code splitting with `React.lazy()`
-- [ ] Automated accessibility testing using `axe-core`
-- [ ] Unit and integration testing
-- [ ] Remove or adopt Framer Motion for production animations
-- [ ] TypeScript migration for stronger type safety
 - [ ] Static pre-rendering or server-side rendering to improve initial rendering and SEO
+- [ ] Further optimize asset loading and bundle size
+
+### Quality & Testing
+
+- [ ] Unit and integration testing
+- [ ] Automated accessibility testing using `axe-core`
+- [ ] End-to-end testing with Playwright or Cypress
+
+### Developer Experience
+
+- [ ] TypeScript migration for stronger type safety
+- [ ] CI/CD pipeline with automated quality checks
+- [ ] Add a `.env.example` for easier local setup
+
+### User Experience
+
+- [ ] Remove or adopt Framer Motion for production animations
+- [ ] Improve keyboard navigation and accessibility support
+- [ ] Add a command palette or keyboard shortcuts
 
 ---
 
