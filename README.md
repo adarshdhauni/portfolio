@@ -1,90 +1,97 @@
 <div align="center">
-  <img src="public/favicon.svg" width="64" height="64" alt="Adarsh Dhauni logo" />
 
-  <h1>Portfolio</h1>
+<img src="public/favicon.svg" width="64" height="64" alt="Adarsh Dhauni logo" />
 
-  <p>
-    <strong>The personal website of Adarsh Dhauni</strong><br/>
-    A fast, accessible, SEO-optimized portfolio built with React and Vite to showcase projects, technical skills, and professional experience.
-  </p>
+# Portfolio
 
-  <p>
-    <a href="https://portfolio-xi-silk-b3un2mc452.vercel.app/">
-      <img src="https://img.shields.io/badge/Live-Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
-    </a>
-    <a href="LICENSE">
-      <img src="https://img.shields.io/badge/License-MIT-18181B?style=for-the-badge" alt="MIT License" />
-    </a>
-  </p>
+**The personal website of Adarsh Dhauni**
 
-  <p>
-    <img src="https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" />
-    <img src="https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 8" />
-    <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/React_Router-7-CA4245?style=flat-square&logo=reactrouter&logoColor=white" alt="React Router" />
-  </p>
-</div>
+A fast, accessible, SEO-optimized portfolio built with React and Vite to showcase projects, technical skills, and professional experience.
 
-<div align="center">
+<br>
+
+<p>
+  <a href="https://portfolio-xi-silk-b3un2mc452.vercel.app/">
+    <img src="https://img.shields.io/badge/Live-Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+
+  <a href="https://github.com/adarshdhauni/portfolio">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repository" />
+  </a>
+
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-18181B?style=for-the-badge" alt="MIT License" />
+  </a>
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/React-19-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 19" />
+  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite 7" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/React_Router-7-CA4245?style=flat-square&logo=reactrouter&logoColor=white" alt="React Router" />
+</p>
 
 [Features](#features) •
 [Tech Stack](#tech-stack) •
 [Screenshots](#screenshots) •
-[Getting Started](#getting-started) •
-[Contact](#contact)
+[Getting Started](#-getting-started) •
+[Contact](#-contact)
 
 </div>
 
 ---
 
-<details>
-<summary><strong>Table of Contents</strong></summary>
+## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Live Demo](#live-demo)
-- [Features](#features)
-- [Why I Built This](#why-i-built-this)
-- [Tech Stack](#tech-stack)
-- [Architecture Overview](#architecture-overview)
-- [Folder Structure](#folder-structure)
-- [Screenshots](#screenshots)
-- [Lighthouse Scores](#lighthouse-scores)
-- [Performance Optimizations](#performance-optimizations)
-- [Accessibility](#accessibility)
-- [SEO](#seo)
-- [Responsive Design](#responsive-design)
-- [Theme Support](#theme-support)
-- [Components](#components)
-- [Custom Hooks](#custom-hooks)
-- [Engineering Decisions](#engineering-decisions)
-- [Challenges & Solutions](#challenges--solutions)
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [Project Statistics](#project-statistics)
-- [Deployment](#deployment)
-- [Future Improvements](#future-improvements)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Connect With Me](#connect-with-me)
-
-</details>
+- [Overview](#-overview)
+- [Live Demo](#-live-demo)
+- [Why I Built This](#-why-i-built-this)
+- [Features](#-features)
+- [Tech Stack](#️-tech-stack)
+- [Architecture](#️-architecture)
+- [Folder Structure](#-folder-structure)
+- [Screenshots](#-screenshots)
+- [Lighthouse Scores](#-lighthouse-scores)
+- [Getting Started](#-getting-started)
+- [Available Scripts](#-available-scripts)
+- [Performance](#-performance)
+- [Accessibility](#-accessibility)
+- [SEO](#-seo)
+- [Responsive Design](#-responsive-design)
+- [Theme Support](#-theme-support)
+- [Components](#-components)
+- [Custom Hooks](#-custom-hooks)
+- [Engineering Decisions](#-engineering-decisions)
+- [Error Handling](#-error-handling)
+- [Testing](#-testing)
+- [Challenges](#-challenges)
+- [Deployment](#-deployment)
+- [Future Improvements](#️-future-improvements)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
+- [Connect With Me](#-connect-with-me)
 
 ---
 
-# Overview
+## 📖 Overview
 
-**Portfolio** is a modern, single-page portfolio website built with **React 19** and **Vite**.
+Portfolio is a modern, single-page portfolio website built to showcase my projects, technical skills, and professional background through a fast, accessible, and production-ready user experience.
 
-It was designed to present my projects, technical skills, and professional background through a clean, responsive, and high-performance user experience.
+|                  |                                                            |
+| ---------------- | ---------------------------------------------------------- |
+| **Type**         | Personal portfolio website                                 |
+| **Architecture** | React Single-Page Application (SPA)                        |
+| **Frontend**     | React 19, Vite 7, React Router 7                           |
+| **Styling**      | Tailwind CSS, Base UI                                      |
+| **Deployment**   | Vercel                                                     |
+| **Focus**        | Performance, Accessibility, SEO, and Maintainability       |
 
-Unlike many portfolio websites, this project focuses on engineering quality as much as visual presentation. Every section is component-driven, content is centralized for easy maintenance, images are optimized for fast loading, accessibility is considered throughout, and the application is structured to achieve excellent Lighthouse scores.
-
-The project is intentionally **frontend-only**—there is no backend, authentication, or database. Every interaction is static, allowing the site to remain lightweight, fast, and easy to deploy.
+The project intentionally remains **frontend-only** with no backend, authentication, or database. Rather than demonstrating full-stack functionality, it focuses on engineering quality through reusable component architecture, responsive design, accessibility, search engine optimization, and excellent Lighthouse scores.
 
 ---
 
-# Live Demo
+# 🌐 Live Demo
 
 ### **🌐 https://portfolio-xi-silk-b3un2mc452.vercel.app/**
 
@@ -92,62 +99,7 @@ Deployed on **Vercel** directly from this repository.
 
 ---
 
-# Features
-
-## Portfolio
-
-- Modern landing hero
-- About section
-- Technical skills showcase
-- Education & learning timeline
-- Featured projects
-- Contact section
-- Resume download
-
-## User Experience
-
-- Sticky navigation
-- Active section highlighting
-- Smooth scrolling
-- Mobile navigation drawer
-- Responsive layouts
-- Scroll-triggered animations
-
-## Theme
-
-- Light mode
-- Dark mode
-- System preference detection
-- Theme persistence
-
-## Performance
-
-- Responsive WebP images
-- `srcSet` & `sizes`
-- Lazy loading
-- High-priority hero image
-- Memoized layout components
-- Optimized bundle structure
-
-## SEO
-
-- Dynamic metadata
-- Open Graph tags
-- Twitter cards
-- Canonical URLs
-- robots.txt
-- sitemap.xml
-- Web App Manifest
-
-## Reliability
-
-- Error Boundary
-- Custom fallback UI
-- Custom 404 page
-
----
-
-# Why I Built This
+# 💡 Why I Built This
 
 A portfolio should demonstrate engineering quality—not just describe it.
 
@@ -157,7 +109,39 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 
 ---
 
-# Tech Stack
+## ✨ Features
+
+### 💼 Portfolio
+
+- **Hero Section** — introduction, professional summary, primary call-to-action, and responsive hero image
+- **About** — overview of my background, interests, and software engineering journey
+- **Technical Skills** — categorized overview of frontend, backend, databases, and development tools
+- **Featured Projects** — highlighted portfolio projects with live demos, repositories, and technology stacks
+- **Education & Learning** — academic background, certifications, and continuous learning journey
+- **Contact** — contact form, social links, and resume download for recruiters and collaborators
+
+### 🎨 User Experience
+
+- Sticky navigation with active section highlighting
+- Smooth scrolling between sections
+- Mobile-first responsive layouts
+- Collapsible mobile navigation
+- Scroll-triggered animations
+- Light and dark theme support with system preference detection
+- Persistent theme selection across sessions
+
+### ⚡ Performance & SEO
+
+| Category | Features |
+| -------- | -------- |
+| **Performance** | Responsive WebP images, `srcSet`, `sizes`, native lazy loading, prioritized hero image, memoized layout components, optimized Vite production builds |
+| **SEO** | Dynamic metadata, Open Graph tags, Twitter Cards, canonical URLs, `robots.txt`, `sitemap.xml`, and Web App Manifest |
+| **Accessibility** | Semantic HTML, keyboard-accessible navigation, ARIA labels, visible focus indicators, and accessible form controls |
+| **Reliability** | Error Boundary, custom fallback UI, and dedicated 404 page for unmatched routes |
+
+---
+
+# 🛠️ Tech Stack
 
 <table>
 <tr>
@@ -224,7 +208,7 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 
 ---
 
-## Architecture Overview
+## 🏗️ Architecture
 
 The application intentionally avoids unnecessary complexity. There is no global state management, client-side data fetching, or caching layer because all content is static. Local component state is only used where required, such as the mobile navigation in `Navbar.jsx` and mount state handling in `ThemeToggle.jsx` to prevent hydration mismatches.
 
@@ -364,46 +348,45 @@ portfolio/
 
 ---
 
-## Lighthouse Scores
+## 🏆 Lighthouse Scores
 
-| Category       |                                Desktop                                 |                                 Mobile                                 |
-| -------------- | :--------------------------------------------------------------------: | :--------------------------------------------------------------------: |
-| Performance    | ![100](https://img.shields.io/badge/100-brightgreen?style=flat-square) |  ![97](https://img.shields.io/badge/97-brightgreen?style=flat-square)  |
-| Accessibility  |  ![99](https://img.shields.io/badge/99-brightgreen?style=flat-square)  |  ![99](https://img.shields.io/badge/99-brightgreen?style=flat-square)  |
-| Best Practices | ![100](https://img.shields.io/badge/100-brightgreen?style=flat-square) | ![100](https://img.shields.io/badge/100-brightgreen?style=flat-square) |
-| SEO            | ![100](https://img.shields.io/badge/100-brightgreen?style=flat-square) | ![100](https://img.shields.io/badge/100-brightgreen?style=flat-square) |
+Measured on the deployed production build.
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>🖥️ Desktop</th>
+      <th>📱 Mobile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>⚡ Performance</td>
+      <td><strong>100</strong></td>
+      <td><strong>97</strong></td>
+    </tr>
+    <tr>
+      <td>♿ Accessibility</td>
+      <td><strong>99</strong></td>
+      <td><strong>99</strong></td>
+    </tr>
+    <tr>
+      <td>✅ Best Practices</td>
+      <td><strong>100</strong></td>
+      <td><strong>100</strong></td>
+    </tr>
+    <tr>
+      <td>🔍 SEO</td>
+      <td><strong>100</strong></td>
+      <td><strong>100</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-## Performance Optimizations
-
-- Responsive WebP images delivered through `srcSet` and `sizes` so browsers download only the most appropriate asset
-- Hero image prioritized with `fetchPriority="high"` while below-the-fold content uses native lazy loading
-- Memoized layout components to reduce unnecessary re-renders
-- AOS configured with `once: true` so animations execute only once during a session
-- Static architecture with no client-side data fetching, global state management, or caching overhead
-- Production builds generated with Vite and deployed on Vercel for fast global delivery
-
-> [!NOTE]
-> Route-level code splitting, lazy-loaded page components, and server-side rendering aren't implemented yet — see [Future Improvements](#future-improvements).
-
----
-
-## Accessibility
-
-- Semantic HTML throughout the application
-- ARIA labels for navigation and icon-only controls
-- Keyboard-accessible interactive elements
-- Visible focus indicators
-- Screen-reader-only labels where appropriate
-- Lighthouse Accessibility score of **99** on both desktop and mobile
-
-> [!NOTE]
-> There's no automated accessibility test suite (e.g. `axe-core`) yet — accessibility markup has been implemented manually and verified via Lighthouse, not enforced in CI.
-
----
-
-## SEO
+## 🔍 SEO
 
 - Dynamic page titles and meta descriptions using `react-helmet-async`
 - Canonical URLs
@@ -416,19 +399,19 @@ portfolio/
 
 ---
 
-## Responsive Design
+## 📱 Responsive Design
 
 Built with a mobile-first approach using Tailwind CSS, the interface scales seamlessly across mobile, tablet, laptop, and desktop breakpoints. Responsive images, flexible layouts, and adaptive navigation ensure a consistent experience on every screen size.
 
 ---
 
-## Theme Support
+## 🌓 Theme Support
 
 Light and dark themes are powered by `next-themes`. The application automatically respects the user's system preference on first visit while persisting manual theme selections for subsequent sessions. Mount-aware rendering prevents visual inconsistencies during initialization.
 
 ---
 
-## Components
+## 🧩 Components
 
 | Component           | Folder     | Purpose                                                                   |
 | ------------------- | ---------- | ------------------------------------------------------------------------- |
@@ -447,7 +430,7 @@ Beyond these, `common`, `layout`, `sections`, and `ui` each group components by 
 
 ---
 
-## Custom Hooks
+## 🪝 Custom Hooks
 
 The project currently contains two custom hooks focused exclusively on client-side UI behavior:
 
@@ -456,42 +439,7 @@ The project currently contains two custom hooks focused exclusively on client-si
 
 ---
 
-## Engineering Decisions
-
-### Content-driven architecture
-
-Project data, navigation links, skills, and copy are centralized in the `constants` directory instead of being embedded throughout components. This keeps presentation and content separate, making updates straightforward without modifying component logic.
-
-### Local state over global state
-
-The application intentionally avoids global state management. Interactive state is limited to isolated UI concerns—such as the mobile navigation drawer and theme initialization—making `useState` sufficient while avoiding unnecessary complexity.
-
-### Component-based page composition
-
-Rather than building the portfolio as one large component, each major section is implemented as an independent component and composed within `Home.jsx`. This improves readability, maintainability, and future extensibility.
-
-### Intentional loading strategy
-
-Images are loaded according to their importance. The above-the-fold hero image is prioritized using `fetchPriority="high"` for faster initial rendering, while non-critical images use native lazy loading to reduce initial network and rendering cost.
-
-### Graceful failure handling
-
-An Error Boundary and custom 404 page ensure runtime errors or invalid routes degrade gracefully instead of presenting users with a blank screen.
-
----
-
-## Challenges & Solutions
-
-| Challenge                                                       | Solution                                                                                                          |
-| --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Maintaining a growing single-page application                   | Modular, section-based architecture with centralized content                                                      |
-| Delivering a consistent experience across devices               | Mobile-first responsive layouts with dedicated mobile navigation                                                  |
-| Creating a polished UI without relying on a large design system | Reusable UI primitives, consistent spacing, custom design tokens, and Tailwind utilities                          |
-| Implementing modern SEO without server-side rendering           | Client-side metadata with `react-helmet-async` alongside static `robots.txt`, `sitemap.xml`, and Web App Manifest |
-
----
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -539,7 +487,69 @@ This serves the optimized production build locally before deployment.
 
 ---
 
-## Available Scripts
+## ⚡ Performance
+
+| Optimization | Implementation |
+| ------------ | -------------- |
+| **Responsive images** | WebP images delivered through `srcSet` and `sizes` so browsers download the most appropriate asset |
+| **Hero image loading** | Above-the-fold hero image prioritized with `fetchPriority="high"` while below-the-fold images use native lazy loading |
+| **Memoization** | Memoized layout components to reduce unnecessary re-renders |
+| **Animations** | AOS configured with `once: true` so animations run only once per session |
+| **Lightweight architecture** | Static content eliminates client-side data fetching, global state management, and caching overhead |
+| **Production build** | Optimized production bundles generated with Vite and deployed on Vercel for fast global delivery |
+
+> [!NOTE]
+> Route-level code splitting, lazy-loaded page components, and server-side rendering are not currently implemented. See [Future Improvements](#future-improvements).\
+
+---
+
+## ♿ Accessibility
+
+- Semantic HTML used throughout the application
+- Keyboard-accessible navigation and interactive elements
+- ARIA labels for navigation, theme toggle, and icon-only controls
+- Visible focus indicators for keyboard users
+- Descriptive alternative text for images where applicable
+- Lighthouse Accessibility score of **99** on both desktop and mobile
+
+> [!NOTE]
+> Automated accessibility testing (for example, with `axe-core`) has not been implemented yet. Accessibility has been verified through semantic HTML, manual testing, and Lighthouse audits.
+
+---
+
+## 🧠 Engineering Decisions
+
+### Content-driven architecture
+
+Project data, navigation links, skills, and copy are centralized in the `constants` directory instead of being embedded throughout components. This keeps presentation and content separate, making updates straightforward without modifying component logic.
+
+### Local state over global state
+
+The application intentionally avoids global state management. Interactive state is limited to isolated UI concerns—such as the mobile navigation drawer and theme initialization—making `useState` sufficient while avoiding unnecessary complexity.
+
+### Component-based page composition
+
+Rather than building the portfolio as one large component, each major section is implemented as an independent component and composed within `Home.jsx`. This improves readability, maintainability, and future extensibility.
+
+### Intentional loading strategy
+
+Images are loaded according to their importance. The above-the-fold hero image is prioritized using `fetchPriority="high"` for faster initial rendering, while non-critical images use native lazy loading to reduce initial network and rendering cost.
+
+### Graceful failure handling
+
+An Error Boundary and custom 404 page ensure runtime errors or invalid routes degrade gracefully instead of presenting users with a blank screen.
+
+---
+
+## 🚨 Error Handling
+
+- `react-error-boundary` catches unexpected rendering errors and displays a custom fallback UI instead of a blank screen
+- A dedicated **404 Not Found** page handles invalid routes while preserving a consistent user experience
+- Reusable `ErrorFallback` and error state components provide graceful degradation when runtime errors occur
+
+---
+
+## 📜 Available Scripts
 
 | Script            | Description                                            |
 | ----------------- | ------------------------------------------------------ |
@@ -550,7 +560,7 @@ This serves the optimized production build locally before deployment.
 
 ---
 
-## Project Statistics
+## 📊 Project Statistics
 
 | Metric                | Count |
 | --------------------- | :---: |
@@ -570,7 +580,7 @@ This serves the optimized production build locally before deployment.
 
 ---
 
-## Deployment
+## 🚀 Deployment
 
 The application is deployed on **Vercel** and configured through `vercel.json`.
 
@@ -578,18 +588,35 @@ Because this is a client-side React application, all unmatched routes are rewrit
 
 ---
 
-## Future Improvements
+## 🧪 Testing
 
-- Route-level code splitting with `React.lazy()`
-- Automated accessibility testing using `axe-core`
-- Unit and integration testing
-- Remove or adopt Framer Motion for production animations
-- TypeScript migration for stronger type safety
-- Static pre-rendering or server-side rendering to improve initial rendering and SEO
+The application was manually tested across modern desktop and mobile browsers, including navigation, theme switching, responsive layouts, routing, and contact functionality.
+
+Automated testing is planned as a future improvement.
 
 ---
 
-## Contributing
+## 🧗 Challenges
+
+- **Balancing design and performance** — Creating a visually polished portfolio while maintaining excellent Lighthouse scores required careful image optimization, lazy loading, and avoiding unnecessary JavaScript.
+- **Building reusable UI components** — Organizing the application into reusable layouts, sections, and shared UI components improved maintainability and reduced duplication as the project grew.
+- **Responsive design across devices** — Ensuring a consistent experience on mobile, tablet, and desktop required careful layout planning, responsive images, and adaptive navigation.
+- **SEO for a client-side React application** — Implementing metadata, Open Graph tags, canonical URLs, `robots.txt`, and `sitemap.xml` helped improve discoverability despite using a single-page application.
+
+---
+
+## 🗺️ Future Improvements
+
+- [ ] Route-level code splitting with `React.lazy()`
+- [ ] Automated accessibility testing using `axe-core`
+- [ ] Unit and integration testing
+- [ ] Remove or adopt Framer Motion for production animations
+- [ ] TypeScript migration for stronger type safety
+- [ ] Static pre-rendering or server-side rendering to improve initial rendering and SEO
+
+---
+
+## 🤝 Contributing
 
 Although this is primarily a personal project, feedback, issues, and suggestions are always welcome.
 
@@ -619,7 +646,7 @@ Although this is primarily a personal project, feedback, issues, and suggestions
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the **MIT License**.
 
@@ -627,17 +654,17 @@ See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Contact
+## 📬 Contact
 
 **Adarsh Dhauni**
 
-I'm currently open to remote software engineering opportunities and always happy to discuss the project.
+Open to remote, hybrid, and full-time software engineering opportunities, with a preference for remote roles.
 
 📧 **adarshdhauni186@gmail.com**
 
 ---
 
-## Connect With Me
+## 🌐 Connect With Me
 
 <p align="left">
   <a href="https://github.com/adarshdhauni">
@@ -663,7 +690,7 @@ I'm currently open to remote software engineering opportunities and always happy
 
 Built with ❤️ using React, Vite, and Tailwind CSS.
 
-**Designed, developed, and maintained by
+**Designed, developed, deployed, and maintained by
 <a href="https://github.com/adarshdhauni">Adarsh Dhauni</a>.**
 
 </div>
