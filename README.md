@@ -35,7 +35,7 @@ A fast, accessible, SEO-optimized portfolio built with React and Vite to showcas
 [Architecture](#architecture) •
 [Tech Stack](#tech-stack) •
 [Screenshots](#screenshots) •
-[Getting Started](#-getting-started) •
+[Getting Started](#-getting-started)
 
 </div>
 
