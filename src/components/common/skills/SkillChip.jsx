@@ -14,8 +14,8 @@ const SkillChip = ({ skill }) => {
         text-sm
         font-medium
         text-muted-foreground
-        transition-all
-        duration-300
+        transition-[background-color,border-color,color,transform]
+        duration-150
         hover:-translate-y-0.5
         hover:border-primary/20
         hover:bg-primary

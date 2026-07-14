@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import { ArrowUp } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 import { SITE_CONFIG } from "@/constants/siteConfig";
 import { SOCIAL_LINKS } from "@/constants/sociallinks";
@@ -13,26 +14,32 @@ const iconButtonClass = `
   border
   border-border/50
   transition-all
-  duration-200
+  duration-150
   hover:-translate-y-1
   hover:border-primary/40
   hover:bg-primary/10
   hover:text-primary
+  focus-visible:outline-none
+  focus-visible:ring-3
+  focus-visible:ring-ring/50
 `;
 
 const Footer = () => {
+  const { pathname } = useLocation();
+  const homeHref = pathname === "/" ? "#hero" : "/";
+
   return (
     <footer className="mt-24 border-t border-border/50">
       <Container>
         <div className="flex flex-col items-center gap-10 py-14">
           <div className="space-y-2 text-center">
             <p className="text-lg font-medium tracking-tight">
-              Thanks for visiting.
+              Let's build something great together.
             </p>
 
             <p className="text-sm leading-6 text-muted-foreground">
-              Thanks for visiting. Feel free to reach out if you'd like to
-              collaborate or just say hello.
+              Feel free to reach out if you'd like to collaborate or just say
+              hello.
             </p>
           </div>
 
@@ -61,10 +68,14 @@ const Footer = () => {
               reserved.
             </p>
 
-            <p>Designed & built with React, Vite and Tailwind CSS.</p>
+            <p>Designed and built with React, Vite, and Tailwind CSS.</p>
           </div>
 
-          <a href="#hero" aria-label="Back to top" className={iconButtonClass}>
+          <a
+            href={homeHref}
+            aria-label="Back to top"
+            className={iconButtonClass}
+          >
             <ArrowUp className="size-4" />
           </a>
         </div>

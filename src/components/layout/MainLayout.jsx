@@ -1,4 +1,3 @@
-import React from "react";
 import PageWrapper from "./PageWrapper";
 import Navbar from "./Navbar";
 import Footer from "./Footer";

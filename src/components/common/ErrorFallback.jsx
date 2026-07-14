@@ -1,13 +1,14 @@
 import { AlertTriangle } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
 
 const ErrorFallback = ({ resetErrorBoundary }) => {
-  const navigate = useNavigate();
-
   const handleRetry = () => {
     resetErrorBoundary?.();
+  };
+
+  const handleReturnHome = () => {
+    window.location.replace("/");
   };
 
   return (
@@ -59,7 +60,7 @@ const ErrorFallback = ({ resetErrorBoundary }) => {
           <Button
             size="lg"
             variant="outline"
-            onClick={() => navigate("/")}
+            onClick={handleReturnHome}
             className="sm:min-w-44"
           >
             Back Home

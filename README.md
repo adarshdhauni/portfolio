@@ -78,14 +78,14 @@ A fast, accessible, SEO-optimized portfolio built with React and Vite to showcas
 
 Portfolio is a modern, single-page portfolio website built to showcase my projects, technical skills, and professional background through a fast, accessible, and production-ready user experience.
 
-|                  |                                                            |
-| ---------------- | ---------------------------------------------------------- |
-| **Type**         | Personal portfolio website                                 |
-| **Architecture** | React Single-Page Application (SPA)                        |
-| **Frontend**     | React 19, Vite 7, React Router 7                           |
-| **Styling**      | Tailwind CSS, Base UI                                      |
-| **Deployment**   | Vercel                                                     |
-| **Focus**        | Performance, Accessibility, SEO, and Maintainability       |
+|                  |                                                      |
+| ---------------- | ---------------------------------------------------- |
+| **Type**         | Personal portfolio website                           |
+| **Architecture** | React Single-Page Application (SPA)                  |
+| **Frontend**     | React 19, Vite 7, React Router 7                     |
+| **Styling**      | Tailwind CSS, Base UI                                |
+| **Deployment**   | Vercel                                               |
+| **Focus**        | Performance, Accessibility, SEO, and Maintainability |
 
 The project intentionally remains **frontend-only** with no backend, authentication, or database. Rather than demonstrating full-stack functionality, it focuses on engineering quality through reusable component architecture, responsive design, accessibility, search engine optimization, and excellent Lighthouse scores.
 
@@ -118,7 +118,7 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 - **Technical Skills** — categorized overview of frontend, backend, databases, and development tools
 - **Featured Projects** — highlighted portfolio projects with live demos, repositories, and technology stacks
 - **Education & Learning** — academic background, certifications, and continuous learning journey
-- **Contact** — contact form, social links, and resume download for recruiters and collaborators
+- **Contact** — multiple contact methods, social links, and resume download for recruiters and collaborators.
 
 ### 🎨 User Experience
 
@@ -132,12 +132,12 @@ Rather than relying on unnecessary complexity, the project focuses on delivering
 
 ### ⚡ Performance & SEO
 
-| Category | Features |
-| -------- | -------- |
-| **Performance** | Responsive WebP images, `srcSet`, `sizes`, native lazy loading, prioritized hero image, memoized layout components, optimized Vite production builds |
-| **SEO** | Dynamic metadata, Open Graph tags, Twitter Cards, canonical URLs, `robots.txt`, `sitemap.xml`, and Web App Manifest |
-| **Accessibility** | Semantic HTML, keyboard-accessible navigation, ARIA labels, visible focus indicators, and accessible form controls |
-| **Reliability** | Error Boundary, custom fallback UI, and dedicated 404 page for unmatched routes |
+| Category          | Features                                                                                                                                             |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Performance**   | Responsive WebP images, `srcSet`, `sizes`, native lazy loading, prioritized hero image, memoized layout components, optimized Vite production builds |
+| **SEO**           | Dynamic metadata, Open Graph tags, Twitter Cards, canonical URLs, `robots.txt`, `sitemap.xml`, and Web App Manifest                                  |
+| **Accessibility** | Semantic HTML, keyboard-accessible navigation, ARIA labels, visible focus indicators, and accessible form controls                                   |
+| **Reliability**   | Error Boundary, custom fallback UI, and dedicated 404 page for unmatched routes                                                                      |
 
 ---
 
@@ -228,7 +228,7 @@ flowchart TD
     B -.wraps.-> M[ErrorBoundary.jsx]
 ```
 
-There's no global state library — the only stateful UI lives locally in `Navbar.jsx` (mobile drawer open/close) and `ThemeToggle.jsx` (mount readiness for the theme switch). There's no data-fetching layer, no caching, and no Suspense-based lazy loading; content is static, so none of that is needed yet.
+There's no global state library. Interactive state is kept local to components where required—for example, the mobile navigation drawer in `Navbar.jsx` Theme management is handled by `next-themes` eliminating the need for application-level state.
 
 ---
 
@@ -407,26 +407,24 @@ Built with a mobile-first approach using Tailwind CSS, the interface scales seam
 
 ## 🌓 Theme Support
 
-Light and dark themes are powered by `next-themes`. The application automatically respects the user's system preference on first visit while persisting manual theme selections for subsequent sessions. Mount-aware rendering prevents visual inconsistencies during initialization.
+Light and dark themes are powered by `next-themes`. The application automatically respects the user's system preference on first visit, persists manual theme selections across sessions, and prevents rendering inconsistencies during theme initialization.
 
 ---
 
 ## 🧩 Components
 
-| Component           | Folder     | Purpose                                                                   |
-| ------------------- | ---------- | ------------------------------------------------------------------------- |
-| `Hero.jsx`          | `sections` | Landing section with responsive hero image and primary CTA                |
-| `Navbar.jsx`        | `layout`   | Sticky navigation with active-section highlighting and mobile drawer      |
-| `MainLayout.jsx`    | `layout`   | Page shell composing navbar, main content, and footer                     |
-| `Container.jsx`     | `layout`   | Memoized layout container used across sections                            |
-| `Home.jsx`          | `pages`    | Composes all portfolio sections into the home route                       |
-| `Seo.jsx`           | `common`   | Injects page title, meta description, canonical link, and OG/Twitter tags |
-| `ThemeProvider.jsx` | `common`   | Provides light/dark theme context via `next-themes`                       |
-| `ThemeToggle.jsx`   | `common`   | UI control for switching themes                                           |
-| `ErrorBoundary.jsx` | `common`   | Catches runtime rendering errors                                          |
-| `ErrorFallback.jsx` | `common`   | Fallback UI rendered when `ErrorBoundary` catches an error                |
-
-Beyond these, `common`, `layout`, `sections`, and `ui` each group components by role — `ui` holds the reusable primitives built on Base UI and styled with Tailwind, used across every section.
+| Component           | Folder     | Purpose                                                                                      |
+| ------------------- | ---------- | -------------------------------------------------------------------------------------------- |
+| `Hero.jsx`          | `sections` | Landing section with responsive hero image and primary call-to-action                        |
+| `Navbar.jsx`        | `layout`   | Sticky navigation with active-section highlighting and mobile navigation drawer              |
+| `MainLayout.jsx`    | `layout`   | Shared application layout containing the navigation, page content, and footer                |
+| `Container.jsx`     | `layout`   | Provides a consistent responsive content width and horizontal spacing across sections        |
+| `Home.jsx`          | `pages`    | Composes all portfolio sections into the home route                                          |
+| `Seo.jsx`           | `common`   | Injects page title, meta description, canonical URL, and Open Graph/Twitter metadata         |
+| `ThemeProvider.jsx` | `common`   | Provides light and dark theme context using `next-themes`                                    |
+| `ThemeToggle.jsx`   | `common`   | UI control for switching themes while respecting system preferences and persisting selection |
+| `ErrorBoundary.jsx` | `common`   | Catches unexpected runtime rendering errors                                                  |
+| `ErrorFallback.jsx` | `common`   | Displays a recovery UI that lets users retry rendering or return to the homepage             |
 
 ---
 
@@ -489,14 +487,14 @@ This serves the optimized production build locally before deployment.
 
 ## ⚡ Performance
 
-| Optimization | Implementation |
-| ------------ | -------------- |
-| **Responsive images** | WebP images delivered through `srcSet` and `sizes` so browsers download the most appropriate asset |
-| **Image loading** | Above-the-fold hero image prioritized with `fetchPriority="high"` while below-the-fold images use native lazy loading |
-| **Memoization** | `memo()` applied to shared layout components to reduce unnecessary re-renders |
-| **Animations** | AOS configured with `once: true` so animations execute only once per session |
-| **Static architecture** | Frontend-only application with no client-side data fetching, global state management, or API overhead |
-| **Production build** | Optimized production bundles generated with Vite and deployed on Vercel for fast global delivery |
+| Optimization            | Implementation                                                                                                        |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Responsive images**   | WebP images delivered through `srcSet` and `sizes` so browsers download the most appropriate asset                    |
+| **Image loading**       | Above-the-fold hero image prioritized with `fetchPriority="high"` while below-the-fold images use native lazy loading |
+| **Memoization**         | `memo()` applied to shared layout components to reduce unnecessary re-renders                                         |
+| **Animations**          | AOS configured with `once: true` and automatically disabled for users who prefer reduced motion                       |
+| **Static architecture** | Frontend-only application with no client-side data fetching, global state management, or API overhead                 |
+| **Production build**    | Optimized production bundles generated with Vite and deployed on Vercel for fast global delivery                      |
 
 > [!NOTE]
 > Route-level code splitting, lazy-loaded page components, and server-side rendering are not currently implemented. See [Future Improvements](#future-improvements).
@@ -505,14 +503,15 @@ This serves the optimized production build locally before deployment.
 
 ## ♿ Accessibility
 
-| Feature | Implementation |
-| ------- | -------------- |
-| **Semantic HTML** | Proper use of semantic elements including `<main>`, `<nav>`, `<section>`, and `<footer>` |
-| **Keyboard Navigation** | Interactive elements are keyboard accessible with logical focus order |
-| **Focus Management** | Visible `focus-visible` styles applied to interactive elements for improved keyboard usability |
-| **ARIA Labels** | Applied to navigation, theme toggle, and icon-only controls where appropriate |
-| **Images** | Descriptive `alt` text provided for images where applicable |
-| **Accessibility Audit** | Lighthouse Accessibility score of **99** on both desktop and mobile |
+| Feature                 | Implementation                                                                                                  |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Semantic HTML**       | Proper use of semantic elements including `<main>`, `<nav>`, `<section>`, and `<footer>`                        |
+| **Keyboard Navigation** | Interactive elements are keyboard accessible with logical focus order                                           |
+| **Focus Management**    | Visible `focus-visible` styles applied to interactive elements for improved keyboard usability                  |
+| **ARIA Labels**         | Applied to navigation, theme toggle, icon-only controls, and interactive UI where appropriate                   |
+| **Reduced Motion**      | Respects the user's `prefers-reduced-motion` preference by disabling smooth scrolling and minimizing animations |
+| **Images**              | Descriptive `alt` text provided for images where applicable                                                     |
+| **Accessibility Audit** | Lighthouse Accessibility score of **99** on both desktop and mobile                                             |
 
 > [!NOTE]
 > Automated accessibility testing (for example, with `axe-core`) has not been implemented yet. Accessibility has been verified through semantic HTML, manual testing, and Lighthouse audits.
@@ -545,9 +544,9 @@ An Error Boundary and custom 404 page ensure runtime errors or invalid routes de
 
 ## 🚨 Error Handling
 
-- `react-error-boundary` catches unexpected rendering errors and displays a custom fallback UI instead of a blank screen
-- A dedicated **404 Not Found** page handles invalid routes while preserving a consistent user experience
-- Reusable `ErrorFallback` and error state components provide graceful degradation when runtime errors occur
+- Runtime rendering errors are isolated using `react-error-boundary`, preventing the entire application from crashing
+- A reusable `ErrorFallback` component provides recovery actions, including retrying the render or returning to the homepage
+- A dedicated **404 Not Found** page gracefully handles invalid routes while maintaining a consistent user experience
 
 ---
 

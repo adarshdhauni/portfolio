@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import React, { memo } from "react";
 
 const Container = ({ children, className }) => {
   return (
@@ -11,4 +10,4 @@ const Container = ({ children, className }) => {
   );
 };
 
-export default memo(Container);
+export default Container;

@@ -17,11 +17,14 @@ const socialButtonClass = `
   border
   border-border/50
   transition-all
-  duration-200
+  duration-150
   hover:-translate-y-1
   hover:border-primary/40
   hover:bg-primary/10
   hover:text-primary
+  focus-visible:outline-none
+  focus-visible:ring-3
+  focus-visible:ring-ring/50
 `;
 
 const Hero = () => {
@@ -126,6 +129,7 @@ const Hero = () => {
 
               <div
                 className="
+                group
     w-full
     overflow-hidden
     rounded-[2rem]
@@ -133,11 +137,11 @@ const Hero = () => {
     border-border/50
     bg-card
     p-2
-    shadow-[0_12px_40px_rgba(0,0,0,0.08)]
     transition-all
     duration-300
     hover:-translate-y-1
-    hover:shadow-[0_24px_70px_rgba(0,0,0,0.12)]
+    shadow-sm
+    hover:shadow-[0_18px_50px_rgb(0_0_0/0.08)]
   "
               >
                 <img
@@ -165,8 +169,9 @@ h-auto
 rounded-[1.5rem]
 object-cover
 transition-transform
-duration-500
-hover:scale-[1.015]
+duration-300
+ease-out
+group-hover:scale-[1.015]
 "
                 />
               </div>

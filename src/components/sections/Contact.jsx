@@ -22,7 +22,7 @@ const Contact = () => {
             />
           </div>
 
-          <div className="rounded-3xl border border-border/50 bg-card p-5 shadow-sm sm:p-6 lg:p-8">
+          <div className="rounded-3xl border border-border/50 bg-card p-4 shadow-sm sm:p-6">
             <div className="space-y-4">
               {CONTACT_LINKS.map((link, index) => {
                 const Icon = link.icon;
@@ -48,9 +48,12 @@ const Contact = () => {
                         border-border/50
                         p-4
                         transition-all
-                        duration-200
+                        duration-150
                         hover:border-primary/20
                         hover:bg-muted/60
+                        focus-visible:outline-none
+                        focus-visible:ring-3
+                        focus-visible:ring-ring/50
                       "
                     >
                       <div
@@ -66,7 +69,7 @@ const Contact = () => {
                           bg-primary/10
                           text-primary
                           transition-colors
-                          duration-200
+                          duration-150
                           group-hover:bg-primary
                           group-hover:text-primary-foreground
                         "
@@ -77,7 +80,7 @@ const Contact = () => {
                       <div className="min-w-0">
                         <h3 className="font-semibold">{link.label}</h3>
 
-                        <p className="mt-1 text-sm leading-6 break-all text-muted-foreground">
+                        <p className="mt-1 text-sm leading-6 wrap-break-word text-muted-foreground">
                           {link.description}
                         </p>
                       </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const PageWrapper = ({ children }) => {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-background">

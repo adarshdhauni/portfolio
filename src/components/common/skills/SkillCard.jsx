@@ -17,9 +17,10 @@ const SkillCard = ({ category }) => {
         border
         border-border/50
         bg-card
-        p-8
+        p-4
+        sm:p-6
         transition-all
-        duration-500
+        duration-300
         ease-out
         hover:-translate-y-2
         shadow-sm

@@ -10,13 +10,14 @@ const JourneyCard = ({ item }) => {
     border
     border-border/50
     bg-card
-    p-8
-    shadow-sm
+    p-4
+    sm:p-6
     transition-all
-    duration-500
+    duration-300
     hover:-translate-y-2
-     hover:bg-card/95
-        hover:border-primary/30
+    hover:bg-card/95
+    hover:border-primary/30
+    shadow-sm
     hover:shadow-[0_18px_50px_rgb(0_0_0/0.08)]
   "
     >

@@ -29,6 +29,7 @@ const router = createBrowserRouter([
 function App() {
   useEffect(() => {
     Aos.init({
+      disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
       duration: 700,
       easing: "ease-out-cubic",
       once: true,
@@ -37,11 +38,7 @@ function App() {
     });
   }, []);
 
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
